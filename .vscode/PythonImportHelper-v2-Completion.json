@@ -1,0 +1,1173 @@
+[
+    {
+        "label": "YOLO",
+        "importPath": "ultralytics",
+        "description": "ultralytics",
+        "isExtraImport": true,
+        "detail": "ultralytics",
+        "documentation": {}
+    },
+    {
+        "label": "YOLO",
+        "importPath": "ultralytics",
+        "description": "ultralytics",
+        "isExtraImport": true,
+        "detail": "ultralytics",
+        "documentation": {}
+    },
+    {
+        "label": "YOLO",
+        "importPath": "ultralytics",
+        "description": "ultralytics",
+        "isExtraImport": true,
+        "detail": "ultralytics",
+        "documentation": {}
+    },
+    {
+        "label": "YOLO",
+        "importPath": "ultralytics",
+        "description": "ultralytics",
+        "isExtraImport": true,
+        "detail": "ultralytics",
+        "documentation": {}
+    },
+    {
+        "label": "YOLO",
+        "importPath": "ultralytics",
+        "description": "ultralytics",
+        "isExtraImport": true,
+        "detail": "ultralytics",
+        "documentation": {}
+    },
+    {
+        "label": "YOLO",
+        "importPath": "ultralytics",
+        "description": "ultralytics",
+        "isExtraImport": true,
+        "detail": "ultralytics",
+        "documentation": {}
+    },
+    {
+        "label": "YOLO",
+        "importPath": "ultralytics",
+        "description": "ultralytics",
+        "isExtraImport": true,
+        "detail": "ultralytics",
+        "documentation": {}
+    },
+    {
+        "label": "YOLO",
+        "importPath": "ultralytics",
+        "description": "ultralytics",
+        "isExtraImport": true,
+        "detail": "ultralytics",
+        "documentation": {}
+    },
+    {
+        "label": "YOLO",
+        "importPath": "ultralytics",
+        "description": "ultralytics",
+        "isExtraImport": true,
+        "detail": "ultralytics",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "PCA",
+        "importPath": "sklearn.decomposition",
+        "description": "sklearn.decomposition",
+        "isExtraImport": true,
+        "detail": "sklearn.decomposition",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "BytesIO",
+        "importPath": "io",
+        "description": "io",
+        "isExtraImport": true,
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "base64",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "base64",
+        "description": "base64",
+        "detail": "base64",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "socket",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "socket",
+        "description": "socket",
+        "detail": "socket",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "url_for",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "send_file",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "secure_filename",
+        "importPath": "werkzeug.utils",
+        "description": "werkzeug.utils",
+        "isExtraImport": true,
+        "detail": "werkzeug.utils",
+        "documentation": {}
+    },
+    {
+        "label": "anno_img",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "anno_img",
+        "description": "anno_img",
+        "detail": "anno_img",
+        "documentation": {}
+    },
+    {
+        "label": "anno_liv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "anno_liv",
+        "description": "anno_liv",
+        "detail": "anno_liv",
+        "documentation": {}
+    },
+    {
+        "label": "serve",
+        "importPath": "waitress",
+        "description": "waitress",
+        "isExtraImport": true,
+        "detail": "waitress",
+        "documentation": {}
+    },
+    {
+        "label": "tfjs_model",
+        "kind": 5,
+        "importPath": "YoloTesting.TFJS_test",
+        "description": "YoloTesting.TFJS_test",
+        "peekOfCode": "tfjs_model = YOLO(\"oysterTrainedModels/yolo11nOysterNick/weights/best_web_model\", task=\"detect\")\n# Run inference\nresults = tfjs_model(\"https://ultralytics.com/images/bus.jpg\")",
+        "detail": "YoloTesting.TFJS_test",
+        "documentation": {}
+    },
+    {
+        "label": "results",
+        "kind": 5,
+        "importPath": "YoloTesting.TFJS_test",
+        "description": "YoloTesting.TFJS_test",
+        "peekOfCode": "results = tfjs_model(\"https://ultralytics.com/images/bus.jpg\")",
+        "detail": "YoloTesting.TFJS_test",
+        "documentation": {}
+    },
+    {
+        "label": "csv_file_path",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloBets",
+        "description": "YoloTesting.YoloBets",
+        "peekOfCode": "csv_file_path = r'evaluation_results\\model_comparison_20250717_001353.csv'\n# Load data from CSV\ntry:\n    df = pd.read_csv(csv_file_path)\n    print(\"CSV loaded successfully. Columns found:\", df.columns.tolist())\nexcept FileNotFoundError:\n    print(f\"Error: File '{csv_file_path}' not found.\")\n    exit()\nexcept Exception as e:\n    print(f\"Error loading CSV file: {e}\")",
+        "detail": "YoloTesting.YoloBets",
+        "documentation": {}
+    },
+    {
+        "label": "required_metrics",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloBets",
+        "description": "YoloTesting.YoloBets",
+        "peekOfCode": "required_metrics = ['mAP@0.5:0.95','mAP@0.5', 'Precision', 'Recall']\n# Optional speed metrics\nspeed_metrics = ['Inference (ms/img)', 'Total (ms/img)', 'FPS']\n# Check which speed metrics actually exist\navailable_columns = df.columns.tolist()\npresent_speed = [m for m in speed_metrics if m in available_columns]\n# Convert everything to numeric\nfor col in required_metrics + present_speed:\n    df[col] = pd.to_numeric(df[col], errors='coerce')\n# Filter models common to all datasets",
+        "detail": "YoloTesting.YoloBets",
+        "documentation": {}
+    },
+    {
+        "label": "speed_metrics",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloBets",
+        "description": "YoloTesting.YoloBets",
+        "peekOfCode": "speed_metrics = ['Inference (ms/img)', 'Total (ms/img)', 'FPS']\n# Check which speed metrics actually exist\navailable_columns = df.columns.tolist()\npresent_speed = [m for m in speed_metrics if m in available_columns]\n# Convert everything to numeric\nfor col in required_metrics + present_speed:\n    df[col] = pd.to_numeric(df[col], errors='coerce')\n# Filter models common to all datasets\ndatasets = df['Dataset'].unique()\nprint(\"Datasets found:\", datasets)",
+        "detail": "YoloTesting.YoloBets",
+        "documentation": {}
+    },
+    {
+        "label": "available_columns",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloBets",
+        "description": "YoloTesting.YoloBets",
+        "peekOfCode": "available_columns = df.columns.tolist()\npresent_speed = [m for m in speed_metrics if m in available_columns]\n# Convert everything to numeric\nfor col in required_metrics + present_speed:\n    df[col] = pd.to_numeric(df[col], errors='coerce')\n# Filter models common to all datasets\ndatasets = df['Dataset'].unique()\nprint(\"Datasets found:\", datasets)\nmodels_per_dataset = [set(df[df['Dataset'] == ds]['Model']) for ds in datasets]\nvalid_models = sorted(set.intersection(*models_per_dataset))",
+        "detail": "YoloTesting.YoloBets",
+        "documentation": {}
+    },
+    {
+        "label": "present_speed",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloBets",
+        "description": "YoloTesting.YoloBets",
+        "peekOfCode": "present_speed = [m for m in speed_metrics if m in available_columns]\n# Convert everything to numeric\nfor col in required_metrics + present_speed:\n    df[col] = pd.to_numeric(df[col], errors='coerce')\n# Filter models common to all datasets\ndatasets = df['Dataset'].unique()\nprint(\"Datasets found:\", datasets)\nmodels_per_dataset = [set(df[df['Dataset'] == ds]['Model']) for ds in datasets]\nvalid_models = sorted(set.intersection(*models_per_dataset))\nif not valid_models:",
+        "detail": "YoloTesting.YoloBets",
+        "documentation": {}
+    },
+    {
+        "label": "datasets",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloBets",
+        "description": "YoloTesting.YoloBets",
+        "peekOfCode": "datasets = df['Dataset'].unique()\nprint(\"Datasets found:\", datasets)\nmodels_per_dataset = [set(df[df['Dataset'] == ds]['Model']) for ds in datasets]\nvalid_models = sorted(set.intersection(*models_per_dataset))\nif not valid_models:\n    print(\"Error: No models found that appear in all datasets\")\n    exit()\nprint(\"Models present in all datasets:\", valid_models)\n# Choose your primary metric\nprimary_metric = 'mAP@0.5:0.95'",
+        "detail": "YoloTesting.YoloBets",
+        "documentation": {}
+    },
+    {
+        "label": "models_per_dataset",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloBets",
+        "description": "YoloTesting.YoloBets",
+        "peekOfCode": "models_per_dataset = [set(df[df['Dataset'] == ds]['Model']) for ds in datasets]\nvalid_models = sorted(set.intersection(*models_per_dataset))\nif not valid_models:\n    print(\"Error: No models found that appear in all datasets\")\n    exit()\nprint(\"Models present in all datasets:\", valid_models)\n# Choose your primary metric\nprimary_metric = 'mAP@0.5:0.95'\nprint(f\"\\nUsing primary metric: {primary_metric}\")\n# Tie‑breaker order: accuracy metrics minus primary",
+        "detail": "YoloTesting.YoloBets",
+        "documentation": {}
+    },
+    {
+        "label": "valid_models",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloBets",
+        "description": "YoloTesting.YoloBets",
+        "peekOfCode": "valid_models = sorted(set.intersection(*models_per_dataset))\nif not valid_models:\n    print(\"Error: No models found that appear in all datasets\")\n    exit()\nprint(\"Models present in all datasets:\", valid_models)\n# Choose your primary metric\nprimary_metric = 'mAP@0.5:0.95'\nprint(f\"\\nUsing primary metric: {primary_metric}\")\n# Tie‑breaker order: accuracy metrics minus primary\ntie_breakers = [m for m in required_metrics if m != primary_metric]",
+        "detail": "YoloTesting.YoloBets",
+        "documentation": {}
+    },
+    {
+        "label": "primary_metric",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloBets",
+        "description": "YoloTesting.YoloBets",
+        "peekOfCode": "primary_metric = 'mAP@0.5:0.95'\nprint(f\"\\nUsing primary metric: {primary_metric}\")\n# Tie‑breaker order: accuracy metrics minus primary\ntie_breakers = [m for m in required_metrics if m != primary_metric]\n# Build stats for each model\nmodel_stats = {}\nfor model in valid_models:\n    subset = df[df['Model'] == model]\n    stats = {'model': model}\n    # Avg primary metric",
+        "detail": "YoloTesting.YoloBets",
+        "documentation": {}
+    },
+    {
+        "label": "tie_breakers",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloBets",
+        "description": "YoloTesting.YoloBets",
+        "peekOfCode": "tie_breakers = [m for m in required_metrics if m != primary_metric]\n# Build stats for each model\nmodel_stats = {}\nfor model in valid_models:\n    subset = df[df['Model'] == model]\n    stats = {'model': model}\n    # Avg primary metric\n    stats['avg_primary'] = subset.groupby('Dataset')[primary_metric].first().mean()\n    # Avg tie‑breakers\n    stats['avg_tie'] = [subset.groupby('Dataset')[m].first().mean() for m in tie_breakers]",
+        "detail": "YoloTesting.YoloBets",
+        "documentation": {}
+    },
+    {
+        "label": "model_stats",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloBets",
+        "description": "YoloTesting.YoloBets",
+        "peekOfCode": "model_stats = {}\nfor model in valid_models:\n    subset = df[df['Model'] == model]\n    stats = {'model': model}\n    # Avg primary metric\n    stats['avg_primary'] = subset.groupby('Dataset')[primary_metric].first().mean()\n    # Avg tie‑breakers\n    stats['avg_tie'] = [subset.groupby('Dataset')[m].first().mean() for m in tie_breakers]\n    # Avg speed metrics\n    stats['avg_inference'] = subset.groupby('Dataset')['Inference (ms/img)'].first().mean() if 'Inference (ms/img)' in present_speed else None",
+        "detail": "YoloTesting.YoloBets",
+        "documentation": {}
+    },
+    {
+        "label": "wins",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloBets",
+        "description": "YoloTesting.YoloBets",
+        "peekOfCode": "wins = {m:0 for m in valid_models}\nfor i, mi in enumerate(valid_models):\n    for mj in valid_models[i+1:]:\n        if model_stats[mi]['avg_primary'] > model_stats[mj]['avg_primary']:\n            wins[mi] += 1\n        else:\n            wins[mj] += 1\n# Prepare for sorting\nresults = []\nfor m in valid_models:",
+        "detail": "YoloTesting.YoloBets",
+        "documentation": {}
+    },
+    {
+        "label": "results",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloBets",
+        "description": "YoloTesting.YoloBets",
+        "peekOfCode": "results = []\nfor m in valid_models:\n    s = model_stats[m]\n    # key: wins, avg_primary, tie‑breakers...\n    key = (wins[m], s['avg_primary']) + tuple(s['avg_tie'])\n    results.append((m, wins[m], s['avg_primary'], s['avg_inference'], s['avg_total'], s['avg_fps'], key))\n# Sort descending\nresults.sort(key=lambda x: x[6], reverse=True)\n# Print ranking with speed columns\nprint(\"\\nModel Ranking:\")",
+        "detail": "YoloTesting.YoloBets",
+        "documentation": {}
+    },
+    {
+        "label": "header",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloBets",
+        "description": "YoloTesting.YoloBets",
+        "peekOfCode": "header = f\"{'Rank':<5} {'Model':<20} {'Wins':<5} {'Avg_'+primary_metric:<10}\"\nif 'Inference (ms/img)' in present_speed:\n    header += \"  Inference(ms) \"\nif 'Total (ms/img)' in present_speed:\n    header += \"  Total(ms) \"\nif 'FPS' in present_speed:\n    header += \"  FPS \"\nprint(header)\nfor idx, (m, w, ap, inf, tot, fps, _) in enumerate(results, 1):\n    line = f\"{idx:<5} {m:<25} {w:<5} {ap:>10.3f}\"",
+        "detail": "YoloTesting.YoloBets",
+        "documentation": {}
+    },
+    {
+        "label": "model_paths",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloCompare",
+        "description": "YoloTesting.YoloCompare",
+        "peekOfCode": "model_paths = [\n    \"oysterTrainedModels/yolo11mOyster/weights/best.pt\",\n    \"oysterTrainedModels/yolo11nOyster/weights/best.pt\",\n    \"oysterTrainedModels/yolo11sOyster/weights/best.pt\"\n]\n# Location of your data.yaml file\n# Swap as needed, full path as was just copied/pasted from file explorer\ndata_yaml = \"REU_Oyster_2024_Improved-2/data.yaml\"\nresults_list = []\ncount = 0",
+        "detail": "YoloTesting.YoloCompare",
+        "documentation": {}
+    },
+    {
+        "label": "data_yaml",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloCompare",
+        "description": "YoloTesting.YoloCompare",
+        "peekOfCode": "data_yaml = \"REU_Oyster_2024_Improved-2/data.yaml\"\nresults_list = []\ncount = 0\nnames = [\"YOLOv11m\", \"YOLOv11s\", \"YOLOv11n\"]\nfor path in model_paths:\n    print(f\"Validating model: {path}\")\n    model = YOLO(path)\n    results = model.val(data=data_yaml, save=False)\n    results_list.append({\n        \"Run Name\": names[count],",
+        "detail": "YoloTesting.YoloCompare",
+        "documentation": {}
+    },
+    {
+        "label": "results_list",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloCompare",
+        "description": "YoloTesting.YoloCompare",
+        "peekOfCode": "results_list = []\ncount = 0\nnames = [\"YOLOv11m\", \"YOLOv11s\", \"YOLOv11n\"]\nfor path in model_paths:\n    print(f\"Validating model: {path}\")\n    model = YOLO(path)\n    results = model.val(data=data_yaml, save=False)\n    results_list.append({\n        \"Run Name\": names[count],\n        \"Precision\": round(results.box.p.mean().item(), 3),",
+        "detail": "YoloTesting.YoloCompare",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloCompare",
+        "description": "YoloTesting.YoloCompare",
+        "peekOfCode": "count = 0\nnames = [\"YOLOv11m\", \"YOLOv11s\", \"YOLOv11n\"]\nfor path in model_paths:\n    print(f\"Validating model: {path}\")\n    model = YOLO(path)\n    results = model.val(data=data_yaml, save=False)\n    results_list.append({\n        \"Run Name\": names[count],\n        \"Precision\": round(results.box.p.mean().item(), 3),\n        \"Recall\": round(results.box.r.mean().item(), 3),",
+        "detail": "YoloTesting.YoloCompare",
+        "documentation": {}
+    },
+    {
+        "label": "names",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloCompare",
+        "description": "YoloTesting.YoloCompare",
+        "peekOfCode": "names = [\"YOLOv11m\", \"YOLOv11s\", \"YOLOv11n\"]\nfor path in model_paths:\n    print(f\"Validating model: {path}\")\n    model = YOLO(path)\n    results = model.val(data=data_yaml, save=False)\n    results_list.append({\n        \"Run Name\": names[count],\n        \"Precision\": round(results.box.p.mean().item(), 3),\n        \"Recall\": round(results.box.r.mean().item(), 3),\n        \"mAP@0.5\": round(results.box.map50.mean().item(), 3),",
+        "detail": "YoloTesting.YoloCompare",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloCompare",
+        "description": "YoloTesting.YoloCompare",
+        "peekOfCode": "df = pd.DataFrame(results_list)\ndf_sorted = df.sort_values(by=\"mAP@0.5\", ascending=False).reset_index(drop=True)\nprint(\"\\n📊 Model Comparison:\")\nprint(df_sorted)",
+        "detail": "YoloTesting.YoloCompare",
+        "documentation": {}
+    },
+    {
+        "label": "df_sorted",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloCompare",
+        "description": "YoloTesting.YoloCompare",
+        "peekOfCode": "df_sorted = df.sort_values(by=\"mAP@0.5\", ascending=False).reset_index(drop=True)\nprint(\"\\n📊 Model Comparison:\")\nprint(df_sorted)",
+        "detail": "YoloTesting.YoloCompare",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate_models",
+        "kind": 2,
+        "importPath": "YoloTesting.YoloCompareAll",
+        "description": "YoloTesting.YoloCompareAll",
+        "peekOfCode": "def evaluate_models(models, data_yaml):\n    \"\"\"Evaluate all models on a single dataset and return results DataFrame.\"\"\"\n    results_list = []\n    dataset_name = os.path.basename(os.path.dirname(data_yaml))\n    print(f\"\\n{'=' * 50}\")\n    print(f\"Evaluating models on dataset: {dataset_name}\")\n    print(f\"{'=' * 50}\")\n    for path in models:\n        # Extract model name from path - FIXED\n        model_type = os.path.basename(os.path.dirname(os.path.dirname(path)))",
+        "detail": "YoloTesting.YoloCompareAll",
+        "documentation": {}
+    },
+    {
+        "label": "RESULTS_DIR",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloCompareAll",
+        "description": "YoloTesting.YoloCompareAll",
+        "peekOfCode": "RESULTS_DIR = \"evaluation_results\"\nos.makedirs(RESULTS_DIR, exist_ok=True)\n\"\"\"\nUpdated Yolo model Comparison.\nOld Nick uses Nick's model training configuration, but transferred to yolo11\nNew Merged Uses the Merged data from Nick and Other groups with an updated training config\nNew Nick uses a new training configuration with only Nick's\nOld Nick used a 640 image resolution for m sized models due to memory constraints\nNew Merged and New Nick uses 960 resolution for all models including m sized, but downsizes the batch size\n    for m models to alleviate memory.",
+        "detail": "YoloTesting.YoloCompareAll",
+        "documentation": {}
+    },
+    {
+        "label": "model_paths",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloCompareAll",
+        "description": "YoloTesting.YoloCompareAll",
+        "peekOfCode": "model_paths = [\n    \"oysterTrainedModels/yolo11mOysterNick/weights/best.pt\",  # OldNick\n    \"oysterTrainedModels/yolo11nOysterNick/weights/best.pt\",\n    \"oysterTrainedModels/yolo11sOysterNick/weights/best.pt\",\n    \"oysterTrainedModels/yolo11mMergedData960/weights/best.pt\",  # NewMerged\n    \"oysterTrainedModels/yolo11nMergedData960/weights/best.pt\",\n    \"oysterTrainedModels/yolo11sMergedData960/weights/best.pt\",\n    \"oysterTrainedModels/yolo11mNickData960/weights/best.pt\",  # NewNick\n    \"oysterTrainedModels/yolo11nNickData960/weights/best.pt\",\n    \"oysterTrainedModels/yolo11sNickData960/weights/best.pt\"",
+        "detail": "YoloTesting.YoloCompareAll",
+        "documentation": {}
+    },
+    {
+        "label": "data_yaml_files",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloCompareAll",
+        "description": "YoloTesting.YoloCompareAll",
+        "peekOfCode": "data_yaml_files = [\n    \"REU_Oyster_2024_Improved-2/data.yaml\",\n    \"MergedData/data.yaml\"\n]\ndef evaluate_models(models, data_yaml):\n    \"\"\"Evaluate all models on a single dataset and return results DataFrame.\"\"\"\n    results_list = []\n    dataset_name = os.path.basename(os.path.dirname(data_yaml))\n    print(f\"\\n{'=' * 50}\")\n    print(f\"Evaluating models on dataset: {dataset_name}\")",
+        "detail": "YoloTesting.YoloCompareAll",
+        "documentation": {}
+    },
+    {
+        "label": "all_results",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloCompareAll",
+        "description": "YoloTesting.YoloCompareAll",
+        "peekOfCode": "all_results = []\ndataset_results = []  # Store results for each dataset\nfor data_yaml in data_yaml_files:\n    if not os.path.exists(data_yaml):\n        print(f\"⚠️ Dataset not found: {data_yaml}\")\n        continue\n    df = evaluate_models(model_paths, data_yaml)\n    all_results.append(df)\n    # Store dataset name and sorted results for later printing\n    dataset_name = os.path.basename(os.path.dirname(data_yaml))",
+        "detail": "YoloTesting.YoloCompareAll",
+        "documentation": {}
+    },
+    {
+        "label": "dataset_results",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloCompareAll",
+        "description": "YoloTesting.YoloCompareAll",
+        "peekOfCode": "dataset_results = []  # Store results for each dataset\nfor data_yaml in data_yaml_files:\n    if not os.path.exists(data_yaml):\n        print(f\"⚠️ Dataset not found: {data_yaml}\")\n        continue\n    df = evaluate_models(model_paths, data_yaml)\n    all_results.append(df)\n    # Store dataset name and sorted results for later printing\n    dataset_name = os.path.basename(os.path.dirname(data_yaml))\n    sorted_df = df.sort_values(by=\"mAP@0.5\", ascending=False)",
+        "detail": "YoloTesting.YoloCompareAll",
+        "documentation": {}
+    },
+    {
+        "label": "model2",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloDetect",
+        "description": "YoloTesting.YoloDetect",
+        "peekOfCode": "model2 = YOLO(\"oysterTrainedModels/yolo11sOysterNick/weights/best.pt\")\n#run inference with model on an image\nresults = model2(\"Untitled-video-Made-with-Clipchamp_mp4-0008_jpg.rf.a34c142a3dcd7dfc463507d628afb901.jpg\", save=True, show=True)",
+        "detail": "YoloTesting.YoloDetect",
+        "documentation": {}
+    },
+    {
+        "label": "results",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloDetect",
+        "description": "YoloTesting.YoloDetect",
+        "peekOfCode": "results = model2(\"Untitled-video-Made-with-Clipchamp_mp4-0008_jpg.rf.a34c142a3dcd7dfc463507d628afb901.jpg\", save=True, show=True)",
+        "detail": "YoloTesting.YoloDetect",
+        "documentation": {}
+    },
+    {
+        "label": "csv_file_path",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloEmb",
+        "description": "YoloTesting.YoloEmb",
+        "peekOfCode": "csv_file_path = r'evaluation_results\\model_comparison_20250717_001353.csv'\n# 1) Load CSV\ndf = pd.read_csv(csv_file_path)\n# 2) Metrics of interest\nmetrics = ['mAP@0.5:0.95','mAP@0.5','Precision','Recall']\nfor m in metrics:\n    df[m] = pd.to_numeric(df[m], errors='coerce')\n# 3) Pivot into one row per (Model), one column per (Dataset,Metric)\npivot = df.pivot(index='Model', columns='Dataset', values=metrics)\npivot.columns = [f\"{metric}_{ds}\" for metric, ds in pivot.columns]",
+        "detail": "YoloTesting.YoloEmb",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloEmb",
+        "description": "YoloTesting.YoloEmb",
+        "peekOfCode": "df = pd.read_csv(csv_file_path)\n# 2) Metrics of interest\nmetrics = ['mAP@0.5:0.95','mAP@0.5','Precision','Recall']\nfor m in metrics:\n    df[m] = pd.to_numeric(df[m], errors='coerce')\n# 3) Pivot into one row per (Model), one column per (Dataset,Metric)\npivot = df.pivot(index='Model', columns='Dataset', values=metrics)\npivot.columns = [f\"{metric}_{ds}\" for metric, ds in pivot.columns]\npivot = pivot.dropna()\n# 4) Build the feature matrix",
+        "detail": "YoloTesting.YoloEmb",
+        "documentation": {}
+    },
+    {
+        "label": "metrics",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloEmb",
+        "description": "YoloTesting.YoloEmb",
+        "peekOfCode": "metrics = ['mAP@0.5:0.95','mAP@0.5','Precision','Recall']\nfor m in metrics:\n    df[m] = pd.to_numeric(df[m], errors='coerce')\n# 3) Pivot into one row per (Model), one column per (Dataset,Metric)\npivot = df.pivot(index='Model', columns='Dataset', values=metrics)\npivot.columns = [f\"{metric}_{ds}\" for metric, ds in pivot.columns]\npivot = pivot.dropna()\n# 4) Build the feature matrix\nX = pivot.values\nmodels = pivot.index.tolist()",
+        "detail": "YoloTesting.YoloEmb",
+        "documentation": {}
+    },
+    {
+        "label": "pivot",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloEmb",
+        "description": "YoloTesting.YoloEmb",
+        "peekOfCode": "pivot = df.pivot(index='Model', columns='Dataset', values=metrics)\npivot.columns = [f\"{metric}_{ds}\" for metric, ds in pivot.columns]\npivot = pivot.dropna()\n# 4) Build the feature matrix\nX = pivot.values\nmodels = pivot.index.tolist()\n# 5) Standardize features\nscaler = StandardScaler()\nX_scaled = scaler.fit_transform(X)\n# 6) Run PCA (2 components)",
+        "detail": "YoloTesting.YoloEmb",
+        "documentation": {}
+    },
+    {
+        "label": "pivot.columns",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloEmb",
+        "description": "YoloTesting.YoloEmb",
+        "peekOfCode": "pivot.columns = [f\"{metric}_{ds}\" for metric, ds in pivot.columns]\npivot = pivot.dropna()\n# 4) Build the feature matrix\nX = pivot.values\nmodels = pivot.index.tolist()\n# 5) Standardize features\nscaler = StandardScaler()\nX_scaled = scaler.fit_transform(X)\n# 6) Run PCA (2 components)\npca = PCA(n_components=2)",
+        "detail": "YoloTesting.YoloEmb",
+        "documentation": {}
+    },
+    {
+        "label": "pivot",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloEmb",
+        "description": "YoloTesting.YoloEmb",
+        "peekOfCode": "pivot = pivot.dropna()\n# 4) Build the feature matrix\nX = pivot.values\nmodels = pivot.index.tolist()\n# 5) Standardize features\nscaler = StandardScaler()\nX_scaled = scaler.fit_transform(X)\n# 6) Run PCA (2 components)\npca = PCA(n_components=2)\nembedding = pca.fit_transform(X_scaled)",
+        "detail": "YoloTesting.YoloEmb",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloEmb",
+        "description": "YoloTesting.YoloEmb",
+        "peekOfCode": "X = pivot.values\nmodels = pivot.index.tolist()\n# 5) Standardize features\nscaler = StandardScaler()\nX_scaled = scaler.fit_transform(X)\n# 6) Run PCA (2 components)\npca = PCA(n_components=2)\nembedding = pca.fit_transform(X_scaled)\n# 7) Define and project the “ideal” vector\nideal_raw    = np.ones_like(X[0])",
+        "detail": "YoloTesting.YoloEmb",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloEmb",
+        "description": "YoloTesting.YoloEmb",
+        "peekOfCode": "models = pivot.index.tolist()\n# 5) Standardize features\nscaler = StandardScaler()\nX_scaled = scaler.fit_transform(X)\n# 6) Run PCA (2 components)\npca = PCA(n_components=2)\nembedding = pca.fit_transform(X_scaled)\n# 7) Define and project the “ideal” vector\nideal_raw    = np.ones_like(X[0])\nideal_scaled = scaler.transform(ideal_raw.reshape(1, -1))",
+        "detail": "YoloTesting.YoloEmb",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloEmb",
+        "description": "YoloTesting.YoloEmb",
+        "peekOfCode": "scaler = StandardScaler()\nX_scaled = scaler.fit_transform(X)\n# 6) Run PCA (2 components)\npca = PCA(n_components=2)\nembedding = pca.fit_transform(X_scaled)\n# 7) Define and project the “ideal” vector\nideal_raw    = np.ones_like(X[0])\nideal_scaled = scaler.transform(ideal_raw.reshape(1, -1))\nideal_emb    = pca.transform(ideal_scaled)[0]\n# 8) Compute distances to ideal",
+        "detail": "YoloTesting.YoloEmb",
+        "documentation": {}
+    },
+    {
+        "label": "X_scaled",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloEmb",
+        "description": "YoloTesting.YoloEmb",
+        "peekOfCode": "X_scaled = scaler.fit_transform(X)\n# 6) Run PCA (2 components)\npca = PCA(n_components=2)\nembedding = pca.fit_transform(X_scaled)\n# 7) Define and project the “ideal” vector\nideal_raw    = np.ones_like(X[0])\nideal_scaled = scaler.transform(ideal_raw.reshape(1, -1))\nideal_emb    = pca.transform(ideal_scaled)[0]\n# 8) Compute distances to ideal\ndists = np.linalg.norm(embedding - ideal_emb, axis=1)",
+        "detail": "YoloTesting.YoloEmb",
+        "documentation": {}
+    },
+    {
+        "label": "pca",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloEmb",
+        "description": "YoloTesting.YoloEmb",
+        "peekOfCode": "pca = PCA(n_components=2)\nembedding = pca.fit_transform(X_scaled)\n# 7) Define and project the “ideal” vector\nideal_raw    = np.ones_like(X[0])\nideal_scaled = scaler.transform(ideal_raw.reshape(1, -1))\nideal_emb    = pca.transform(ideal_scaled)[0]\n# 8) Compute distances to ideal\ndists = np.linalg.norm(embedding - ideal_emb, axis=1)\n# 9) Assemble & rank\nout = pd.DataFrame({",
+        "detail": "YoloTesting.YoloEmb",
+        "documentation": {}
+    },
+    {
+        "label": "embedding",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloEmb",
+        "description": "YoloTesting.YoloEmb",
+        "peekOfCode": "embedding = pca.fit_transform(X_scaled)\n# 7) Define and project the “ideal” vector\nideal_raw    = np.ones_like(X[0])\nideal_scaled = scaler.transform(ideal_raw.reshape(1, -1))\nideal_emb    = pca.transform(ideal_scaled)[0]\n# 8) Compute distances to ideal\ndists = np.linalg.norm(embedding - ideal_emb, axis=1)\n# 9) Assemble & rank\nout = pd.DataFrame({\n    'Model': models,",
+        "detail": "YoloTesting.YoloEmb",
+        "documentation": {}
+    },
+    {
+        "label": "ideal_scaled",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloEmb",
+        "description": "YoloTesting.YoloEmb",
+        "peekOfCode": "ideal_scaled = scaler.transform(ideal_raw.reshape(1, -1))\nideal_emb    = pca.transform(ideal_scaled)[0]\n# 8) Compute distances to ideal\ndists = np.linalg.norm(embedding - ideal_emb, axis=1)\n# 9) Assemble & rank\nout = pd.DataFrame({\n    'Model': models,\n    'PC1': embedding[:,0],\n    'PC2': embedding[:,1],\n    'Distance_to_Ideal': dists",
+        "detail": "YoloTesting.YoloEmb",
+        "documentation": {}
+    },
+    {
+        "label": "dists",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloEmb",
+        "description": "YoloTesting.YoloEmb",
+        "peekOfCode": "dists = np.linalg.norm(embedding - ideal_emb, axis=1)\n# 9) Assemble & rank\nout = pd.DataFrame({\n    'Model': models,\n    'PC1': embedding[:,0],\n    'PC2': embedding[:,1],\n    'Distance_to_Ideal': dists\n}).sort_values('Distance_to_Ideal')\n# 10) Show ranking\nprint(\"\\nModels ranked by closeness to the ideal (perfect) metrics:\\n\")",
+        "detail": "YoloTesting.YoloEmb",
+        "documentation": {}
+    },
+    {
+        "label": "out",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloEmb",
+        "description": "YoloTesting.YoloEmb",
+        "peekOfCode": "out = pd.DataFrame({\n    'Model': models,\n    'PC1': embedding[:,0],\n    'PC2': embedding[:,1],\n    'Distance_to_Ideal': dists\n}).sort_values('Distance_to_Ideal')\n# 10) Show ranking\nprint(\"\\nModels ranked by closeness to the ideal (perfect) metrics:\\n\")\nprint(out.to_string(index=False, float_format=\"%.4f\"))\n# 11) Save to CSV",
+        "detail": "YoloTesting.YoloEmb",
+        "documentation": {}
+    },
+    {
+        "label": "output_path",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloEmb",
+        "description": "YoloTesting.YoloEmb",
+        "peekOfCode": "output_path = os.path.splitext(csv_file_path)[0] + '_PCA_distances.csv'\nout.to_csv(output_path, index=False, float_format=\"%.4f\")\nprint(f\"\\n✅ Ranking also saved to: {output_path}\")",
+        "detail": "YoloTesting.YoloEmb",
+        "documentation": {}
+    },
+    {
+        "label": "csv_file_path",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloPCA",
+        "description": "YoloTesting.YoloPCA",
+        "peekOfCode": "csv_file_path = r'evaluation_results\\model_comparison_20250717_001353.csv'\n# 1) Load CSV\ntry:\n    df = pd.read_csv(csv_file_path)\nexcept FileNotFoundError:\n    print(f\"Error: File '{csv_file_path}' not found.\"); exit()\nexcept Exception as e:\n    print(f\"Error loading CSV file: {e}\"); exit()\n# 2) Metrics of interest\nrequired_metrics = ['mAP@0.5:0.95','mAP@0.5','Precision','Recall']",
+        "detail": "YoloTesting.YoloPCA",
+        "documentation": {}
+    },
+    {
+        "label": "required_metrics",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloPCA",
+        "description": "YoloTesting.YoloPCA",
+        "peekOfCode": "required_metrics = ['mAP@0.5:0.95','mAP@0.5','Precision','Recall']\nfor col in required_metrics:\n    df[col] = pd.to_numeric(df[col], errors='coerce')\n# 3) Restrict to models present in all datasets\ndatasets = df['Dataset'].unique()\nmodels_per_dataset = [set(df[df['Dataset']==d]['Model']) for d in datasets]\nvalid_models = sorted(set.intersection(*models_per_dataset))\n# 4) Compute per‑model averages\nrows = []\nfor m in valid_models:",
+        "detail": "YoloTesting.YoloPCA",
+        "documentation": {}
+    },
+    {
+        "label": "datasets",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloPCA",
+        "description": "YoloTesting.YoloPCA",
+        "peekOfCode": "datasets = df['Dataset'].unique()\nmodels_per_dataset = [set(df[df['Dataset']==d]['Model']) for d in datasets]\nvalid_models = sorted(set.intersection(*models_per_dataset))\n# 4) Compute per‑model averages\nrows = []\nfor m in valid_models:\n    sub = df[df['Model']==m]\n    avg_metrics = {\n        metric: sub.groupby('Dataset')[metric].first().mean()\n        for metric in required_metrics",
+        "detail": "YoloTesting.YoloPCA",
+        "documentation": {}
+    },
+    {
+        "label": "models_per_dataset",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloPCA",
+        "description": "YoloTesting.YoloPCA",
+        "peekOfCode": "models_per_dataset = [set(df[df['Dataset']==d]['Model']) for d in datasets]\nvalid_models = sorted(set.intersection(*models_per_dataset))\n# 4) Compute per‑model averages\nrows = []\nfor m in valid_models:\n    sub = df[df['Model']==m]\n    avg_metrics = {\n        metric: sub.groupby('Dataset')[metric].first().mean()\n        for metric in required_metrics\n    }",
+        "detail": "YoloTesting.YoloPCA",
+        "documentation": {}
+    },
+    {
+        "label": "valid_models",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloPCA",
+        "description": "YoloTesting.YoloPCA",
+        "peekOfCode": "valid_models = sorted(set.intersection(*models_per_dataset))\n# 4) Compute per‑model averages\nrows = []\nfor m in valid_models:\n    sub = df[df['Model']==m]\n    avg_metrics = {\n        metric: sub.groupby('Dataset')[metric].first().mean()\n        for metric in required_metrics\n    }\n    avg_metrics['Model'] = m",
+        "detail": "YoloTesting.YoloPCA",
+        "documentation": {}
+    },
+    {
+        "label": "rows",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloPCA",
+        "description": "YoloTesting.YoloPCA",
+        "peekOfCode": "rows = []\nfor m in valid_models:\n    sub = df[df['Model']==m]\n    avg_metrics = {\n        metric: sub.groupby('Dataset')[metric].first().mean()\n        for metric in required_metrics\n    }\n    avg_metrics['Model'] = m\n    rows.append(avg_metrics)\nagg_df = pd.DataFrame(rows).set_index('Model')",
+        "detail": "YoloTesting.YoloPCA",
+        "documentation": {}
+    },
+    {
+        "label": "agg_df",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloPCA",
+        "description": "YoloTesting.YoloPCA",
+        "peekOfCode": "agg_df = pd.DataFrame(rows).set_index('Model')\n# 5) Run PCA → PC1\npca = PCA(n_components=1)\nagg_df['PC1_score'] = pca.fit_transform(agg_df[required_metrics])\n# 6) Rank by PC1 (descending)\nagg_df = agg_df.sort_values('PC1_score', ascending=False)\n# 7) Show results\nprint(\"Model ranking by first principal component (PC1):\\n\")\nprint(agg_df[['PC1_score'] + required_metrics].to_string(float_format=\"%.4f\"))\n# 8) Save to CSV",
+        "detail": "YoloTesting.YoloPCA",
+        "documentation": {}
+    },
+    {
+        "label": "pca",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloPCA",
+        "description": "YoloTesting.YoloPCA",
+        "peekOfCode": "pca = PCA(n_components=1)\nagg_df['PC1_score'] = pca.fit_transform(agg_df[required_metrics])\n# 6) Rank by PC1 (descending)\nagg_df = agg_df.sort_values('PC1_score', ascending=False)\n# 7) Show results\nprint(\"Model ranking by first principal component (PC1):\\n\")\nprint(agg_df[['PC1_score'] + required_metrics].to_string(float_format=\"%.4f\"))\n# 8) Save to CSV\noutput_path = os.path.splitext(csv_file_path)[0] + '_PC1_ranking.csv'\nagg_df[['PC1_score'] + required_metrics].to_csv(output_path, float_format=\"%.4f\")",
+        "detail": "YoloTesting.YoloPCA",
+        "documentation": {}
+    },
+    {
+        "label": "agg_df['PC1_score']",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloPCA",
+        "description": "YoloTesting.YoloPCA",
+        "peekOfCode": "agg_df['PC1_score'] = pca.fit_transform(agg_df[required_metrics])\n# 6) Rank by PC1 (descending)\nagg_df = agg_df.sort_values('PC1_score', ascending=False)\n# 7) Show results\nprint(\"Model ranking by first principal component (PC1):\\n\")\nprint(agg_df[['PC1_score'] + required_metrics].to_string(float_format=\"%.4f\"))\n# 8) Save to CSV\noutput_path = os.path.splitext(csv_file_path)[0] + '_PC1_ranking.csv'\nagg_df[['PC1_score'] + required_metrics].to_csv(output_path, float_format=\"%.4f\")\nprint(f\"\\n✅ Ranking saved to: {output_path}\")",
+        "detail": "YoloTesting.YoloPCA",
+        "documentation": {}
+    },
+    {
+        "label": "agg_df",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloPCA",
+        "description": "YoloTesting.YoloPCA",
+        "peekOfCode": "agg_df = agg_df.sort_values('PC1_score', ascending=False)\n# 7) Show results\nprint(\"Model ranking by first principal component (PC1):\\n\")\nprint(agg_df[['PC1_score'] + required_metrics].to_string(float_format=\"%.4f\"))\n# 8) Save to CSV\noutput_path = os.path.splitext(csv_file_path)[0] + '_PC1_ranking.csv'\nagg_df[['PC1_score'] + required_metrics].to_csv(output_path, float_format=\"%.4f\")\nprint(f\"\\n✅ Ranking saved to: {output_path}\")",
+        "detail": "YoloTesting.YoloPCA",
+        "documentation": {}
+    },
+    {
+        "label": "output_path",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloPCA",
+        "description": "YoloTesting.YoloPCA",
+        "peekOfCode": "output_path = os.path.splitext(csv_file_path)[0] + '_PC1_ranking.csv'\nagg_df[['PC1_score'] + required_metrics].to_csv(output_path, float_format=\"%.4f\")\nprint(f\"\\n✅ Ranking saved to: {output_path}\")",
+        "detail": "YoloTesting.YoloPCA",
+        "documentation": {}
+    },
+    {
+        "label": "TRAIN_CONFIG",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloTrainAll",
+        "description": "YoloTesting.YoloTrainAll",
+        "peekOfCode": "TRAIN_CONFIG = {\n    \"data\": \"REU_Oyster_2024_Improved-2/data.yaml\",\n    \"epochs\": 200,\n    \"imgsz\": 960,  # Default image size\n    \"batch\": 16,\n    \"patience\": 20,\n    \"amp\": True,\n    \"optimize\": True,\n    \"project\": \"oysterTrainedModels\",\n    \"exist_ok\": True",
+        "detail": "YoloTesting.YoloTrainAll",
+        "documentation": {}
+    },
+    {
+        "label": "model_dir",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloTrainAll",
+        "description": "YoloTesting.YoloTrainAll",
+        "peekOfCode": "model_dir = \"modelsM\"\nmodel_files = [f for f in os.listdir(model_dir) if f.endswith('.pt')]\nif not model_files:\n    print(f\"No .pt models found in {model_dir}!\")\n    exit()\nprint(f\"Found {len(model_files)} models to train:\")\nfor i, model_file in enumerate(model_files, 1):\n    model_path = os.path.join(model_dir, model_file)\n    model_name = os.path.splitext(model_file)[0]  # Extract model name without extension\n    print(f\"\\n{'=' * 50}\")",
+        "detail": "YoloTesting.YoloTrainAll",
+        "documentation": {}
+    },
+    {
+        "label": "model_files",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloTrainAll",
+        "description": "YoloTesting.YoloTrainAll",
+        "peekOfCode": "model_files = [f for f in os.listdir(model_dir) if f.endswith('.pt')]\nif not model_files:\n    print(f\"No .pt models found in {model_dir}!\")\n    exit()\nprint(f\"Found {len(model_files)} models to train:\")\nfor i, model_file in enumerate(model_files, 1):\n    model_path = os.path.join(model_dir, model_file)\n    model_name = os.path.splitext(model_file)[0]  # Extract model name without extension\n    print(f\"\\n{'=' * 50}\")\n    print(f\"TRAINING MODEL {i}/{len(model_files)}: {model_name}\")",
+        "detail": "YoloTesting.YoloTrainAll",
+        "documentation": {}
+    },
+    {
+        "label": "TRAIN_CONFIG",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloTrainOne",
+        "description": "YoloTesting.YoloTrainOne",
+        "peekOfCode": "TRAIN_CONFIG = {\n    \"data\": \"REU_Oyster_2024_Improved-2/data.yaml\",\n    \"epochs\": 200,\n    \"imgsz\": 960,\n    \"batch\": 16,\n    \"patience\": 20,\n    \"amp\": True,\n    \"optimize\": True,\n    \"project\": \"oysterTrainedModels\",\n    \"exist_ok\": True",
+        "detail": "YoloTesting.YoloTrainOne",
+        "documentation": {}
+    },
+    {
+        "label": "model_path",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloTrainOne",
+        "description": "YoloTesting.YoloTrainOne",
+        "peekOfCode": "model_path = \"models/yolo11m.pt\"\nmodel_name= \"yolo11mOyster\"\nmodel = YOLO(model_path)\n# Train with unique run name\nresults = model.train(\n    **TRAIN_CONFIG,\n    name=model_name  # Saves runs in oysterTrainedModels/model_name\n)",
+        "detail": "YoloTesting.YoloTrainOne",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloTrainOne",
+        "description": "YoloTesting.YoloTrainOne",
+        "peekOfCode": "model = YOLO(model_path)\n# Train with unique run name\nresults = model.train(\n    **TRAIN_CONFIG,\n    name=model_name  # Saves runs in oysterTrainedModels/model_name\n)",
+        "detail": "YoloTesting.YoloTrainOne",
+        "documentation": {}
+    },
+    {
+        "label": "results",
+        "kind": 5,
+        "importPath": "YoloTesting.YoloTrainOne",
+        "description": "YoloTesting.YoloTrainOne",
+        "peekOfCode": "results = model.train(\n    **TRAIN_CONFIG,\n    name=model_name  # Saves runs in oysterTrainedModels/model_name\n)",
+        "detail": "YoloTesting.YoloTrainOne",
+        "documentation": {}
+    },
+    {
+        "label": "get_class_color",
+        "kind": 2,
+        "importPath": "anno_img",
+        "description": "anno_img",
+        "peekOfCode": "def get_class_color(cls_id: int) -> tuple:\n    # Generate consistent color based on class ID\n    random.seed(cls_id)\n    return tuple(random.randint(0, 255) for _ in range(3))\ndef is_allowed_file(filename: str) -> bool:\n    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\ndef annotate_image_bytes(image_bytes: bytes, ext: str, conf_threshold) -> tuple[BytesIO, str]:\n    nparr = np.frombuffer(image_bytes, np.uint8)\n    img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)\n    if img is None:",
+        "detail": "anno_img",
+        "documentation": {}
+    },
+    {
+        "label": "is_allowed_file",
+        "kind": 2,
+        "importPath": "anno_img",
+        "description": "anno_img",
+        "peekOfCode": "def is_allowed_file(filename: str) -> bool:\n    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\ndef annotate_image_bytes(image_bytes: bytes, ext: str, conf_threshold) -> tuple[BytesIO, str]:\n    nparr = np.frombuffer(image_bytes, np.uint8)\n    img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)\n    if img is None:\n        raise ValueError(\"Failed to decode image\")\n    results = model(img)[0]\n    for box in results.boxes:\n        conf = float(box.conf)",
+        "detail": "anno_img",
+        "documentation": {}
+    },
+    {
+        "label": "annotate_image_bytes",
+        "kind": 2,
+        "importPath": "anno_img",
+        "description": "anno_img",
+        "peekOfCode": "def annotate_image_bytes(image_bytes: bytes, ext: str, conf_threshold) -> tuple[BytesIO, str]:\n    nparr = np.frombuffer(image_bytes, np.uint8)\n    img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)\n    if img is None:\n        raise ValueError(\"Failed to decode image\")\n    results = model(img)[0]\n    for box in results.boxes:\n        conf = float(box.conf)\n        if conf < conf_threshold:\n            continue",
+        "detail": "anno_img",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "anno_img",
+        "description": "anno_img",
+        "peekOfCode": "model = YOLO('active_model/bestSmall.pt')  # Load once\nALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png', 'bmp'}\n# Choose your colors and font\nBOX_COLOR = (0, 0, 255)  # Red (B, G, R)\nTEXT_COLOR = (255, 255, 255)  # White\nFONT = cv2.FONT_HERSHEY_COMPLEX  # Choose from list below\nFONT_SCALE = 0.6\nTHICKNESS = 2\nTEXT_BG_COLOR = (0, 0, 255)  # Background color for text, optional\nimport random",
+        "detail": "anno_img",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_EXTENSIONS",
+        "kind": 5,
+        "importPath": "anno_img",
+        "description": "anno_img",
+        "peekOfCode": "ALLOWED_EXTENSIONS = {'jpg', 'jpeg', 'png', 'bmp'}\n# Choose your colors and font\nBOX_COLOR = (0, 0, 255)  # Red (B, G, R)\nTEXT_COLOR = (255, 255, 255)  # White\nFONT = cv2.FONT_HERSHEY_COMPLEX  # Choose from list below\nFONT_SCALE = 0.6\nTHICKNESS = 2\nTEXT_BG_COLOR = (0, 0, 255)  # Background color for text, optional\nimport random\ndef get_class_color(cls_id: int) -> tuple:",
+        "detail": "anno_img",
+        "documentation": {}
+    },
+    {
+        "label": "BOX_COLOR",
+        "kind": 5,
+        "importPath": "anno_img",
+        "description": "anno_img",
+        "peekOfCode": "BOX_COLOR = (0, 0, 255)  # Red (B, G, R)\nTEXT_COLOR = (255, 255, 255)  # White\nFONT = cv2.FONT_HERSHEY_COMPLEX  # Choose from list below\nFONT_SCALE = 0.6\nTHICKNESS = 2\nTEXT_BG_COLOR = (0, 0, 255)  # Background color for text, optional\nimport random\ndef get_class_color(cls_id: int) -> tuple:\n    # Generate consistent color based on class ID\n    random.seed(cls_id)",
+        "detail": "anno_img",
+        "documentation": {}
+    },
+    {
+        "label": "TEXT_COLOR",
+        "kind": 5,
+        "importPath": "anno_img",
+        "description": "anno_img",
+        "peekOfCode": "TEXT_COLOR = (255, 255, 255)  # White\nFONT = cv2.FONT_HERSHEY_COMPLEX  # Choose from list below\nFONT_SCALE = 0.6\nTHICKNESS = 2\nTEXT_BG_COLOR = (0, 0, 255)  # Background color for text, optional\nimport random\ndef get_class_color(cls_id: int) -> tuple:\n    # Generate consistent color based on class ID\n    random.seed(cls_id)\n    return tuple(random.randint(0, 255) for _ in range(3))",
+        "detail": "anno_img",
+        "documentation": {}
+    },
+    {
+        "label": "FONT",
+        "kind": 5,
+        "importPath": "anno_img",
+        "description": "anno_img",
+        "peekOfCode": "FONT = cv2.FONT_HERSHEY_COMPLEX  # Choose from list below\nFONT_SCALE = 0.6\nTHICKNESS = 2\nTEXT_BG_COLOR = (0, 0, 255)  # Background color for text, optional\nimport random\ndef get_class_color(cls_id: int) -> tuple:\n    # Generate consistent color based on class ID\n    random.seed(cls_id)\n    return tuple(random.randint(0, 255) for _ in range(3))\ndef is_allowed_file(filename: str) -> bool:",
+        "detail": "anno_img",
+        "documentation": {}
+    },
+    {
+        "label": "FONT_SCALE",
+        "kind": 5,
+        "importPath": "anno_img",
+        "description": "anno_img",
+        "peekOfCode": "FONT_SCALE = 0.6\nTHICKNESS = 2\nTEXT_BG_COLOR = (0, 0, 255)  # Background color for text, optional\nimport random\ndef get_class_color(cls_id: int) -> tuple:\n    # Generate consistent color based on class ID\n    random.seed(cls_id)\n    return tuple(random.randint(0, 255) for _ in range(3))\ndef is_allowed_file(filename: str) -> bool:\n    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS",
+        "detail": "anno_img",
+        "documentation": {}
+    },
+    {
+        "label": "THICKNESS",
+        "kind": 5,
+        "importPath": "anno_img",
+        "description": "anno_img",
+        "peekOfCode": "THICKNESS = 2\nTEXT_BG_COLOR = (0, 0, 255)  # Background color for text, optional\nimport random\ndef get_class_color(cls_id: int) -> tuple:\n    # Generate consistent color based on class ID\n    random.seed(cls_id)\n    return tuple(random.randint(0, 255) for _ in range(3))\ndef is_allowed_file(filename: str) -> bool:\n    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\ndef annotate_image_bytes(image_bytes: bytes, ext: str, conf_threshold) -> tuple[BytesIO, str]:",
+        "detail": "anno_img",
+        "documentation": {}
+    },
+    {
+        "label": "TEXT_BG_COLOR",
+        "kind": 5,
+        "importPath": "anno_img",
+        "description": "anno_img",
+        "peekOfCode": "TEXT_BG_COLOR = (0, 0, 255)  # Background color for text, optional\nimport random\ndef get_class_color(cls_id: int) -> tuple:\n    # Generate consistent color based on class ID\n    random.seed(cls_id)\n    return tuple(random.randint(0, 255) for _ in range(3))\ndef is_allowed_file(filename: str) -> bool:\n    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS\ndef annotate_image_bytes(image_bytes: bytes, ext: str, conf_threshold) -> tuple[BytesIO, str]:\n    nparr = np.frombuffer(image_bytes, np.uint8)",
+        "detail": "anno_img",
+        "documentation": {}
+    },
+    {
+        "label": "detect_objects_from_bytes",
+        "kind": 2,
+        "importPath": "anno_liv",
+        "description": "anno_liv",
+        "peekOfCode": "def detect_objects_from_bytes(frame_bytes: bytes, conf_threshold=0.75):\n    nparr = np.frombuffer(frame_bytes, np.uint8)\n    frame = cv2.imdecode(nparr, cv2.IMREAD_COLOR)\n    results = model(frame)\n    detections = []\n    for box in results[0].boxes:\n        if float(box.conf) >= conf_threshold:\n            x1, y1, x2, y2 = map(int, box.xyxy[0])\n            label = model.names[int(box.cls[0])]\n            conf = float(box.conf)",
+        "detail": "anno_liv",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "anno_liv",
+        "description": "anno_liv",
+        "peekOfCode": "model = YOLO(\"active_model/bestNano.pt\")  # Load YOLO once\ndef detect_objects_from_bytes(frame_bytes: bytes, conf_threshold=0.75):\n    nparr = np.frombuffer(frame_bytes, np.uint8)\n    frame = cv2.imdecode(nparr, cv2.IMREAD_COLOR)\n    results = model(frame)\n    detections = []\n    for box in results[0].boxes:\n        if float(box.conf) >= conf_threshold:\n            x1, y1, x2, y2 = map(int, box.xyxy[0])\n            label = model.names[int(box.cls[0])]",
+        "detail": "anno_liv",
+        "documentation": {}
+    },
+    {
+        "label": "make_color_palette",
+        "kind": 2,
+        "importPath": "anno_vid",
+        "description": "anno_vid",
+        "peekOfCode": "def make_color_palette(n):\n    \"\"\"Generate n visually distinct BGR colors via HSV spacing.\"\"\"\n    palette = []\n    for i in range(n):\n        hue = int(179 * i / n)\n        hsv = np.uint8([[[hue, 255, 255]]])           # full saturation/value\n        bgr = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)[0][0]\n        palette.append((int(bgr[0]), int(bgr[1]), int(bgr[2])))\n    return palette\nCLASS_PALETTE = make_color_palette(len(model.names))",
+        "detail": "anno_vid",
+        "documentation": {}
+    },
+    {
+        "label": "choose_text_color",
+        "kind": 2,
+        "importPath": "anno_vid",
+        "description": "anno_vid",
+        "peekOfCode": "def choose_text_color(bgr):\n    \"\"\"Pick black or white text for max contrast against bgr bg.\"\"\"\n    # brightness = (B + G + R) / 3\n    return (0, 0, 0) if sum(bgr)/3 > 128 else (255, 255, 255)\ndef annotate_video_bytes(video_bytes: bytes, output_format='mp4') -> tuple[BytesIO, str]:\n    # 1) write input→tmp\n    fd_in, path_in = tempfile.mkstemp(suffix='.mp4'); os.close(fd_in)\n    with open(path_in, 'wb') as f: f.write(video_bytes)\n    # 2) open capture\n    cap = cv2.VideoCapture(path_in)",
+        "detail": "anno_vid",
+        "documentation": {}
+    },
+    {
+        "label": "annotate_video_bytes",
+        "kind": 2,
+        "importPath": "anno_vid",
+        "description": "anno_vid",
+        "peekOfCode": "def annotate_video_bytes(video_bytes: bytes, output_format='mp4') -> tuple[BytesIO, str]:\n    # 1) write input→tmp\n    fd_in, path_in = tempfile.mkstemp(suffix='.mp4'); os.close(fd_in)\n    with open(path_in, 'wb') as f: f.write(video_bytes)\n    # 2) open capture\n    cap = cv2.VideoCapture(path_in)\n    if not cap.isOpened():\n        os.remove(path_in)\n        raise IOError(\"Could not open video\")\n    video_fps = cap.get(cv2.CAP_PROP_FPS)",
+        "detail": "anno_vid",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "anno_vid",
+        "description": "anno_vid",
+        "peekOfCode": "model = YOLO('active_model/bestSmall.pt')\nmodel_fps = 5.0\n# precompute a distinct color for each class\ndef make_color_palette(n):\n    \"\"\"Generate n visually distinct BGR colors via HSV spacing.\"\"\"\n    palette = []\n    for i in range(n):\n        hue = int(179 * i / n)\n        hsv = np.uint8([[[hue, 255, 255]]])           # full saturation/value\n        bgr = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)[0][0]",
+        "detail": "anno_vid",
+        "documentation": {}
+    },
+    {
+        "label": "model_fps",
+        "kind": 5,
+        "importPath": "anno_vid",
+        "description": "anno_vid",
+        "peekOfCode": "model_fps = 5.0\n# precompute a distinct color for each class\ndef make_color_palette(n):\n    \"\"\"Generate n visually distinct BGR colors via HSV spacing.\"\"\"\n    palette = []\n    for i in range(n):\n        hue = int(179 * i / n)\n        hsv = np.uint8([[[hue, 255, 255]]])           # full saturation/value\n        bgr = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)[0][0]\n        palette.append((int(bgr[0]), int(bgr[1]), int(bgr[2])))",
+        "detail": "anno_vid",
+        "documentation": {}
+    },
+    {
+        "label": "CLASS_PALETTE",
+        "kind": 5,
+        "importPath": "anno_vid",
+        "description": "anno_vid",
+        "peekOfCode": "CLASS_PALETTE = make_color_palette(len(model.names))\ndef choose_text_color(bgr):\n    \"\"\"Pick black or white text for max contrast against bgr bg.\"\"\"\n    # brightness = (B + G + R) / 3\n    return (0, 0, 0) if sum(bgr)/3 > 128 else (255, 255, 255)\ndef annotate_video_bytes(video_bytes: bytes, output_format='mp4') -> tuple[BytesIO, str]:\n    # 1) write input→tmp\n    fd_in, path_in = tempfile.mkstemp(suffix='.mp4'); os.close(fd_in)\n    with open(path_in, 'wb') as f: f.write(video_bytes)\n    # 2) open capture",
+        "detail": "anno_vid",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def root():\n    return redirect(url_for('login'))\n@app.route('/login')\ndef login():\n    return render_template('login.html')\n@app.route('/index.html')\ndef dashboard():\n    return render_template('index.html')\n@app.route('/detect_image', methods=['POST'])\ndef detect_image():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def login():\n    return render_template('login.html')\n@app.route('/index.html')\ndef dashboard():\n    return render_template('index.html')\n@app.route('/detect_image', methods=['POST'])\ndef detect_image():\n    f = request.files['image']\n    filename = secure_filename(f.filename)\n    if not anno_img.is_allowed_file(filename):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "dashboard",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def dashboard():\n    return render_template('index.html')\n@app.route('/detect_image', methods=['POST'])\ndef detect_image():\n    f = request.files['image']\n    filename = secure_filename(f.filename)\n    if not anno_img.is_allowed_file(filename):\n        return \"Unsupported file type.\", 400\n    ext = filename.rsplit('.', 1)[1].lower()\n    image_bytes = f.read()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "detect_image",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def detect_image():\n    f = request.files['image']\n    filename = secure_filename(f.filename)\n    if not anno_img.is_allowed_file(filename):\n        return \"Unsupported file type.\", 400\n    ext = filename.rsplit('.', 1)[1].lower()\n    image_bytes = f.read()\n    annotated_io, mime_type = anno_img.annotate_image_bytes(image_bytes, ext, conf_threshold=0.75)\n    return send_file(\n        annotated_io,",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "detect_video",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def detect_video():\n    f = request.files['video']\n    video_bytes = f.read()\n    from anno_vid import annotate_video_bytes\n    annotated_io, mime_type = annotate_video_bytes(video_bytes)\n    return send_file(\n        annotated_io,\n        mimetype=mime_type,\n        as_attachment=True,\n        download_name='annotated_video.mp4'",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "livestream_page",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def livestream_page():\n    return render_template('livestream.html')\n@app.route('/video_feed')\ndef video_feed():\n    # uses the generator from anno_liv\n    return Response(\n        anno_liv.frame_generator(),\n        mimetype='multipart/x-mixed-replace; boundary=frame'\n    )\n@app.route(\"/annotate_frame\", methods=[\"POST\"])",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "video_feed",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def video_feed():\n    # uses the generator from anno_liv\n    return Response(\n        anno_liv.frame_generator(),\n        mimetype='multipart/x-mixed-replace; boundary=frame'\n    )\n@app.route(\"/annotate_frame\", methods=[\"POST\"])\ndef annotate_frame():\n    frame = request.files.get(\"frame\")\n    if not frame:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "annotate_frame",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def annotate_frame():\n    frame = request.files.get(\"frame\")\n    if not frame:\n        return \"No frame received\", 400\n    frame_bytes = frame.read()\n    try:\n        from anno_liv import detect_objects_from_bytes\n        detections = detect_objects_from_bytes(frame_bytes)\n    except Exception as e:\n        return {\"error\": str(e)}, 500",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\nUPLOAD_FOLDER = 'uploads'\nOUTPUT_FOLDER = 'outputs'\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\nos.makedirs(OUTPUT_FOLDER, exist_ok=True)\napp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\napp.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER\n@app.route('/')\ndef root():\n    return redirect(url_for('login'))",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "UPLOAD_FOLDER",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "UPLOAD_FOLDER = 'uploads'\nOUTPUT_FOLDER = 'outputs'\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\nos.makedirs(OUTPUT_FOLDER, exist_ok=True)\napp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\napp.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER\n@app.route('/')\ndef root():\n    return redirect(url_for('login'))\n@app.route('/login')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "OUTPUT_FOLDER",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "OUTPUT_FOLDER = 'outputs'\nos.makedirs(UPLOAD_FOLDER, exist_ok=True)\nos.makedirs(OUTPUT_FOLDER, exist_ok=True)\napp.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\napp.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER\n@app.route('/')\ndef root():\n    return redirect(url_for('login'))\n@app.route('/login')\ndef login():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['UPLOAD_FOLDER']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER\napp.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER\n@app.route('/')\ndef root():\n    return redirect(url_for('login'))\n@app.route('/login')\ndef login():\n    return render_template('login.html')\n@app.route('/index.html')\ndef dashboard():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.config['OUTPUT_FOLDER']",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.config['OUTPUT_FOLDER'] = OUTPUT_FOLDER\n@app.route('/')\ndef root():\n    return redirect(url_for('login'))\n@app.route('/login')\ndef login():\n    return render_template('login.html')\n@app.route('/index.html')\ndef dashboard():\n    return render_template('index.html')",
+        "detail": "app",
+        "documentation": {}
+    }
+]
