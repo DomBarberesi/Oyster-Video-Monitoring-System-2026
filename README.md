@@ -6,6 +6,11 @@ Website uses node.js yarn.
 "yarn start" to start locally hosted website
 "yarn start --host" to start hosted website over network
 
+Or do:
+npm install
+npm start
+*Copy local address into browser
+
 Docker file is included for google cloud run server deployment
 
 Weaknesses:
