@@ -1,0 +1,14 @@
+names:
+- Oyster- Indeterminate
+- Oyster-Closed
+- Oyster-Open
+nc: 3
+roboflow:
+  license: CC BY 4.0
+  project: reu_oyster_2024_improved-e5wxs
+  url: https://universe.roboflow.com/oyster-classification/reu_oyster_2024_improved-e5wxs/dataset/1
+  version: 1
+  workspace: oyster-classification
+test: ../test/images
+train: ../train/images
+val: ../valid/images
