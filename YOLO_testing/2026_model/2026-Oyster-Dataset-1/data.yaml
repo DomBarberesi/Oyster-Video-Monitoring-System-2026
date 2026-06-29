@@ -1,0 +1,14 @@
+names:
+- Oyster-Closed
+- Oyster-Indeterminate
+- Oyster-Open
+nc: 3
+roboflow:
+  license: CC BY 4.0
+  project: 2026-oyster-dataset-17fk8
+  url: https://universe.roboflow.com/dominics-workspace-owh2r/2026-oyster-dataset-17fk8/dataset/1
+  version: 1
+  workspace: dominics-workspace-owh2r
+test: ../test/images
+train: ../train/images
+val: ../valid/images
