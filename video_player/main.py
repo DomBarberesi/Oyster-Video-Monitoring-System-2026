@@ -7,7 +7,7 @@ capture = cv2.VideoCapture("oyster_videos/oyster_video_" + str(vidNum) + ".mp4")
 isFrame, frame = capture.read()
 
 #model path will need to be changed
-model = YOLO("/Users/ellakennedy/Oyster-Video-Monitoring-System-2026/YOLO_testing/2026_model/runs/detect/models/yolov8m_2026/weights/best.pt")
+model = YOLO("/home/reuekennedy/Oyster-Video-Monitoring-System-2026/YOLO_testing/2026_model/runs/detect/models/yolov8m_v3_2026/weights/best.pt")
 
 while isFrame:
 
