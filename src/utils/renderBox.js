@@ -8,7 +8,16 @@ import labels from "./labelsO.json";
  * @param {Array} classes_data class array
  * @param {Array[Number]} ratios boxes ratio [xRatio, yRatio]
  */
-export const renderBoxes = (canvasRef,source, boxes_data, scores_data, classes_data, ratios) => {
+export const renderBoxes = (
+  canvasRef,
+  source,
+  boxes_data,
+  scores_data,
+  classes_data,
+  ratios,
+  oysterCount
+) => {
+
   const ctx = canvasRef.getContext("2d");
 
   // 1. draw the source frame into the canvas
@@ -64,6 +73,10 @@ export const renderBoxes = (canvasRef,source, boxes_data, scores_data, classes_d
     ctx.fillStyle = "#ffffff";
     ctx.fillText(klass + " - " + score + "%", x1 - 1, yText < 0 ? 0 : yText);
   }
+  // Draw oyster count
+  ctx.font = "32px Arial";
+  ctx.fillStyle = "red";
+  ctx.fillText(`Oysters: ${oysterCount}`, 20, 20);
 };
 
 class Colors {

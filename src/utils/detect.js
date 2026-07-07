@@ -79,11 +79,22 @@ export const detect = async (source, model, canvasRef, onComplete = () => {}) =>
 
   const nms = await tf.image.nonMaxSuppressionAsync(boxes, scores, 500, 0.5, 0.40); // NMS to filter boxes
 
+  const oysterCount = nms.size;
+  console.log("Oysters detected:", oysterCount);
+
   const boxes_data = boxes.gather(nms, 0).dataSync(); // indexing boxes by nms index
   const scores_data = scores.gather(nms, 0).dataSync(); // indexing scores by nms index
   const classes_data = classes.gather(nms, 0).dataSync(); // indexing classes by nms index
 
-  renderBoxes(canvasRef,source, boxes_data, scores_data, classes_data, [xRatio, yRatio]); // render boxes
+  renderBoxes(
+    canvasRef,
+    source,
+    boxes_data,
+    scores_data,
+    classes_data,
+    [xRatio, yRatio],
+    oysterCount
+  ); // render boxes
   tf.dispose([res, transRes, boxes, scores, classes, nms]); // clear memory
 
   // 2. pull a new data URL from the canvas
