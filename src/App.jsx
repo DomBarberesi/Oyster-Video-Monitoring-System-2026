@@ -6,6 +6,7 @@ import ButtonHandler from "./components/btn-handler";
 import { detect, detectVideo } from "./utils/detect";
 import "./style/App.css";
 import DownloadButton from "./components/DownloadButton";
+import { downloadLog } from "./frameLogger";
 
 
 const App = () => {
@@ -107,6 +108,7 @@ const App = () => {
                 canvasRef={canvasRef}
                 recordedBlob={recordedBlob}
             />
+            <button onClick={() => downloadLog("detection_log.csv")}>Download Detection Log</button>
         </div>
     );
 };

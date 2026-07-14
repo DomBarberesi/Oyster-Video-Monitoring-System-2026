@@ -1,6 +1,7 @@
 import * as tf from "@tensorflow/tfjs";
 import { renderBoxes } from "./renderBox";
 import labels from "./labelsO.json";
+import { logFrame } from "../frameLogger";
 
 const numClass = labels.length;
 
@@ -237,6 +238,8 @@ export const detect = async (source, model, canvasRef, onComplete = () => {}) =>
     confirmedFlags,
     confirmedOysterCount,
   } = updateTracker(boxes_data, [xRatio, yRatio]);
+
+  logFrame(boxes_data, scores_data, classes_data, labels, source.currentTime ?? 0, source.currentSrc ?? "unknown", trackedIds, confirmedFlags);
 
   console.log("Current detections:", currentDetectionCount);
   console.log("Confirmed oysters:", confirmedOysterCount);
