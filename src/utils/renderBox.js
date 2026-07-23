@@ -73,6 +73,7 @@ export const renderBoxes = (
       2.5
     );
     ctx.strokeRect(x1, y1, width, height);
+  
 
     ctx.fillStyle = color;
     const textWidth = ctx.measureText(labelText).width;

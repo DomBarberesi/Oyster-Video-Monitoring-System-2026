@@ -16,6 +16,9 @@ let nextOysterId = 1;
 // Lower = stricter, but IDs may reset more often.
 const MAX_TRACK_DISTANCE = 80;
 
+//Minimum iou for an oyster to be considered the same across frames
+const MIN_IOU = 0.5;
+
 // How many processed detection frames an oyster can disappear
 // before we forget its ID.
 const MAX_MISSED_FRAMES = 15;
@@ -23,6 +26,7 @@ const MAX_MISSED_FRAMES = 15;
 // How many times an oyster must be detected before it counts
 // as a real/confirmed oyster.
 const MIN_CONFIRMATION_FRAMES = 3;
+
 
 const resetTracker = () => {
   trackedOysters = [];
@@ -47,6 +51,53 @@ const getBoxCenter = (box, ratios) => {
   };
 };
 
+const getBoxCoords = (box, ratios) => {
+  let [y1, x1, y2, x2] = box;
+
+  x1 *= ratios[0];
+  x2 *= ratios[0];
+  y1 *= ratios[1];
+  y2 *= ratios[1];
+
+  return {
+    x1 : x1,
+    y1 : y1,
+    x2 : x2,
+    y2 : y2
+  };
+};
+
+const getIOU = (newB, oldB) => {
+  let iou = 0;
+
+  if (newB.x1 < 0) {
+    newB.x1 = 0;
+  }
+  if (oldB.x1 < 0) {
+    oldB.x1 = 0;
+  }
+  const a = Math.max(newB.x1, oldB.x1);
+  if (newB.y1 < 0) {
+    newB.y1 = 0;
+  }
+  if (oldB.y1 < 0) {
+    oldB.y1 = 0;
+  }
+  const b = Math.max(newB.y1, oldB.y1);
+  const c = Math.min(newB.x2, oldB.x2);
+  const d = Math.min(newB.y2, oldB.y2);
+
+  if (c >= a && d >= b) {
+    const inter = (c - a) * (d - b);
+    const b1 = (newB.x2 - newB.x1) * (newB.y2 - newB.y1);
+    const b2 = (oldB.x2 - oldB.x1) * (oldB.y2 - oldB.y1);
+    const union = b1 + b2 - inter;
+    iou = inter / union;
+  }
+
+  return iou;
+};
+
 const updateTracker = (boxes_data, ratios) => {
   const updatedTracks = [];
   const trackedIdsForDetections = [];
@@ -58,34 +109,52 @@ const updateTracker = (boxes_data, ratios) => {
   for (let i = 0; i < detectionCount; i++) {
     const box = boxes_data.slice(i * 4, (i + 1) * 4);
     const center = getBoxCenter(box, ratios);
+    const newB = getBoxCoords(box, ratios);
 
-    let bestTrackIndex = -1;
+    let bestTrackIndex1 = -1;
+    let bestTrackIndex2 = -1;
     let bestDistance = Infinity;
+    let bestIOU = 0;
 
     for (let j = 0; j < trackedOysters.length; j++) {
       if (usedOldTrackIndexes.has(j)) continue;
 
       const oldTrack = trackedOysters[j];
+      const oldB = {y1:oldTrack.y1, x1:oldTrack.x1, y2:oldTrack.y2, x2:oldTrack.x2};
       const dist = distance(center.x, center.y, oldTrack.x, oldTrack.y);
+      const iou = getIOU(newB, oldB);
 
       if (dist < bestDistance) {
         bestDistance = dist;
-        bestTrackIndex = j;
+        bestTrackIndex2 = j;
       }
+      if (iou > bestIOU) {
+        bestIOU = iou;
+        bestTrackIndex1 = j;
+      }
+
     }
 
     let assignedId;
     let seenFrames;
     let confirmed;
 
-    if (bestTrackIndex !== -1 && bestDistance <= MAX_TRACK_DISTANCE) {
-      const matchedTrack = trackedOysters[bestTrackIndex];
+    if (bestTrackIndex1 !== -1 && bestIOU >= MIN_IOU) {//bestDistance <= MAX_TRACK_DISTANCE) {
+      const matchedTrack = trackedOysters[bestTrackIndex1];
 
       assignedId = matchedTrack.id;
       seenFrames = matchedTrack.seenFrames + 1;
       confirmed = seenFrames >= MIN_CONFIRMATION_FRAMES;
 
-      usedOldTrackIndexes.add(bestTrackIndex);
+      usedOldTrackIndexes.add(bestTrackIndex1);
+    } else if (bestTrackIndex2 !== -1 && bestDistance < MAX_TRACK_DISTANCE) {
+      const matchedTrack = trackedOysters[bestTrackIndex2];
+
+      assignedId = matchedTrack.id;
+      seenFrames = matchedTrack.seenFrames + 1;
+      confirmed = seenFrames >= MIN_CONFIRMATION_FRAMES;
+
+      usedOldTrackIndexes.add(bestTrackIndex2);
     } else {
       assignedId = nextOysterId;
       nextOysterId++;
@@ -96,6 +165,10 @@ const updateTracker = (boxes_data, ratios) => {
 
     updatedTracks.push({
       id: assignedId,
+      x1: newB.x1,
+      x2: newB.x2,
+      y1: newB.y1,
+      y2: newB.y2,
       x: center.x,
       y: center.y,
       missedFrames: 0,
@@ -105,6 +178,8 @@ const updateTracker = (boxes_data, ratios) => {
 
     trackedIdsForDetections.push(assignedId);
     confirmedFlagsForDetections.push(confirmed);
+
+    console.log("\n-------------\n");
   }
 
   // Keep old tracks that were not matched this frame.
