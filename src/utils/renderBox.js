@@ -3,6 +3,9 @@ import labels from "./labelsO.json";
 /**
  * Render prediction boxes.
  *
+ * Line 1: ID | current raw oyster state | detector confidence
+ * Line 2: confidence-weighted smoothed state
+ *
  * @param {HTMLCanvasElement} canvasRef
  * @param {HTMLVideoElement|HTMLImageElement} source
  * @param {Array} boxesData
@@ -65,26 +68,26 @@ export const renderBoxes = (
   ctx.textBaseline = "top";
 
   for (let i = 0; i < scoresData.length; i++) {
+    // Raw model prediction for the current frame.
     const rawClass = Number(classesData[i]);
 
-    const displayedClass =
+    // Confidence-weighted smoothed result.
+    const smoothedClass =
       smoothedClasses[i] ?? rawClass;
 
     const rawLabel =
       labels[rawClass] ??
       `Unknown-${rawClass}`;
 
-    const displayedLabel =
-      labels[displayedClass] ??
-      `Unknown-${displayedClass}`;
+    const smoothedLabel =
+      labels[smoothedClass] ??
+      `Unknown-${smoothedClass}`;
 
-    const color = colors.get(displayedClass);
+    // Color the box using the smoothed state.
+    const color = colors.get(smoothedClass);
 
     const rawConfidence =
       Number(scoresData[i]) * 100;
-
-    const recentStateAgreement =
-      Number(smoothedSupports[i]) * 100;
 
     const oysterId = trackedIds[i];
 
@@ -105,34 +108,21 @@ export const renderBoxes = (
     const width = x2 - x1;
     const height = y2 - y1;
 
+    // Keep the question mark for an ID that has not yet
+    // reached the minimum confirmation-frame requirement.
     const confirmationMarker =
       isConfirmed ? "" : "?";
 
-    let topLine;
+    const idText =
+      oysterId !== undefined
+        ? `#${oysterId}${confirmationMarker}`
+        : "N/A";
 
-    /*
-     * When the raw and smoothed classes agree, show the
-     * detector confidence normally.
-     *
-     * When smoothing overrides the current raw prediction,
-     * explicitly show what the raw prediction was.
-     */
-    if (rawClass === displayedClass) {
-      topLine =
-        oysterId !== undefined
-          ? `${displayedLabel} ID:#${oysterId}${confirmationMarker} - Confidence: ${rawConfidence.toFixed(1)}%`
-          : `${displayedLabel} - Confidence: ${rawConfidence.toFixed(1)}%`;
-    } else {
-      topLine =
-        oysterId !== undefined
-          ? `${displayedLabel} ID:#${oysterId}${confirmationMarker} - Raw ${rawLabel}: ${rawConfidence.toFixed(1)}%`
-          : `${displayedLabel} - Raw ${rawLabel}: ${rawConfidence.toFixed(1)}%`;
-    }
+    const topLine =
+      `ID: ${idText} | ${rawLabel} | Confidence: ${rawConfidence.toFixed(1)}%`;
 
     const bottomLine =
-      Number.isFinite(recentStateAgreement)
-        ? `Recent-state agreement: ${recentStateAgreement.toFixed(1)}%`
-        : "Recent-state agreement: collecting history";
+      `Smoothed State: ${smoothedLabel}`;
 
     // Draw translucent bounding-box fill.
     ctx.fillStyle =
@@ -163,15 +153,12 @@ export const renderBoxes = (
       height
     );
 
-    /*
-     * Draw a two-line label.
-     */
+    // Draw a two-line label.
     ctx.font = font;
 
     const paddingX = 4;
     const paddingY = 3;
     const lineGap = 2;
-
     const textHeight = fontSize;
 
     const topLineWidth =
@@ -194,7 +181,7 @@ export const renderBoxes = (
 
     let labelX = x1 - 1;
 
-    // Prevent labels from running off the right edge.
+    // Prevent the label from extending past the right edge.
     if (
       labelX + labelWidth >
       ctx.canvas.width
@@ -210,7 +197,8 @@ export const renderBoxes = (
       labelHeight -
       ctx.lineWidth;
 
-    // If there is no space above the box, draw inside it.
+    // Draw the label inside the box when there is not
+    // enough room above it.
     if (labelY < 0) {
       labelY = Math.max(0, y1);
     }
@@ -267,26 +255,8 @@ export const renderBoxes = (
 class Colors {
   constructor() {
     this.palette = [
-      "#FF3838",
-      "#FF9D97",
-      "#FF701F",
-      "#FFB21D",
-      "#CFD231",
-      "#48F90A",
-      "#92CC17",
-      "#3DDB86",
-      "#1A9334",
-      "#00D4BB",
-      "#2C99A8",
-      "#00C2FF",
-      "#344593",
-      "#6473FF",
-      "#0018EC",
-      "#8438FF",
-      "#520085",
-      "#CB38FF",
-      "#FF95C8",
-      "#FF37C7",
+      "#8cff9e",
+      "#dc143c",
     ];
 
     this.n = this.palette.length;
