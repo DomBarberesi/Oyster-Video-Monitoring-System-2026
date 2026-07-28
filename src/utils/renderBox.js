@@ -1,53 +1,104 @@
 import labels from "./labelsO.json";
 
 /**
- * Render prediction boxes
- * @param {HTMLCanvasElement} canvasRef canvas tag reference
- * @param {HTMLVideoElement|HTMLImageElement} source source image/video frame
- * @param {Array} boxes_data boxes array
- * @param {Array} scores_data scores array
- * @param {Array} classes_data class array
- * @param {Array[Number]} ratios boxes ratio [xRatio, yRatio]
- * @param {Number} currentDetectionCount number of oysters detected in current frame
- * @param {Number} confirmedOysterCount number of confirmed unique oysters
- * @param {Array} trackedIds persistent oyster IDs for current frame
- * @param {Array} confirmedFlags whether each detected oyster is confirmed
+ * Render prediction boxes.
+ *
+ * Line 1: ID | current raw oyster state | detector confidence
+ * Line 2: confidence-weighted smoothed state
+ *
+ * @param {HTMLCanvasElement} canvasRef
+ * @param {HTMLVideoElement|HTMLImageElement} source
+ * @param {Array} boxesData
+ * @param {Array} scoresData
+ * @param {Array} classesData
+ * @param {Array<number>} ratios
+ * @param {number} currentDetectionCount
+ * @param {number} confirmedOysterCount
+ * @param {Array} trackedIds
+ * @param {Array} confirmedFlags
+ * @param {Array} smoothedClasses
+ * @param {Array} smoothedSupports
  */
 export const renderBoxes = (
   canvasRef,
   source,
-  boxes_data,
-  scores_data,
-  classes_data,
+  boxesData,
+  scoresData,
+  classesData,
   ratios,
   currentDetectionCount,
   confirmedOysterCount,
   trackedIds = [],
-  confirmedFlags = []
+  confirmedFlags = [],
+  smoothedClasses = [],
+  smoothedSupports = []
 ) => {
   const ctx = canvasRef.getContext("2d");
 
-  ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
-  ctx.drawImage(source, 0, 0, ctx.canvas.width, ctx.canvas.height);
+  ctx.clearRect(
+    0,
+    0,
+    ctx.canvas.width,
+    ctx.canvas.height
+  );
+
+  ctx.drawImage(
+    source,
+    0,
+    0,
+    ctx.canvas.width,
+    ctx.canvas.height
+  );
 
   const colors = new Colors();
 
-  const font = `${Math.max(
-    Math.round(Math.max(ctx.canvas.width, ctx.canvas.height) / 40),
+  const fontSize = Math.max(
+    Math.round(
+      Math.max(
+        ctx.canvas.width,
+        ctx.canvas.height
+      ) / 40
+    ),
     14
-  )}px Arial`;
+  );
+
+  const font = `${fontSize}px Arial`;
 
   ctx.font = font;
   ctx.textBaseline = "top";
 
-  for (let i = 0; i < scores_data.length; ++i) {
-    const klass = labels[classes_data[i]];
-    const color = colors.get(classes_data[i]);
-    const score = (scores_data[i] * 100).toFixed(1);
-    const oysterId = trackedIds[i];
-    const isConfirmed = confirmedFlags[i];
+  for (let i = 0; i < scoresData.length; i++) {
+    // Raw model prediction for the current frame.
+    const rawClass = Number(classesData[i]);
 
-    let [y1, x1, y2, x2] = boxes_data.slice(i * 4, (i + 1) * 4);
+    // Confidence-weighted smoothed result.
+    const smoothedClass =
+      smoothedClasses[i] ?? rawClass;
+
+    const rawLabel =
+      labels[rawClass] ??
+      `Unknown-${rawClass}`;
+
+    const smoothedLabel =
+      labels[smoothedClass] ??
+      `Unknown-${smoothedClass}`;
+
+    // Color the box using the smoothed state.
+    const color = colors.get(smoothedClass);
+
+    const rawConfidence =
+      Number(scoresData[i]) * 100;
+
+    const oysterId = trackedIds[i];
+
+    const isConfirmed =
+      confirmedFlags[i];
+
+    let [y1, x1, y2, x2] =
+      boxesData.slice(
+        i * 4,
+        (i + 1) * 4
+      );
 
     x1 *= ratios[0];
     x2 *= ratios[0];
@@ -57,80 +108,173 @@ export const renderBoxes = (
     const width = x2 - x1;
     const height = y2 - y1;
 
-    const labelText =
+    // Keep the question mark for an ID that has not yet
+    // reached the minimum confirmation-frame requirement.
+    const confirmationMarker =
+      isConfirmed ? "" : "?";
+
+    const idText =
       oysterId !== undefined
-        ? isConfirmed
-          ? `${klass} ID:#${oysterId} - ${score}%`
-          : `${klass} ID:#${oysterId}? - ${score}%`
-        : `${klass} - ${score}%`;
+        ? `#${oysterId}${confirmationMarker}`
+        : "N/A";
 
-    ctx.fillStyle = Colors.hexToRgba(color, 0.2);
-    ctx.fillRect(x1, y1, width, height);
+    const topLine =
+      `ID: ${idText} | ${rawLabel} | Confidence: ${rawConfidence.toFixed(1)}%`;
 
-    ctx.strokeStyle = color;
-    ctx.lineWidth = Math.max(
-      Math.min(ctx.canvas.width, ctx.canvas.height) / 200,
-      2.5
-    );
-    ctx.strokeRect(x1, y1, width, height);
+    const bottomLine =
+      `Smoothed State: ${smoothedLabel}`;
 
-    ctx.fillStyle = color;
-    const textWidth = ctx.measureText(labelText).width;
-    const textHeight = parseInt(font, 10);
-    const yText = y1 - (textHeight + ctx.lineWidth);
+    // Draw translucent bounding-box fill.
+    ctx.fillStyle =
+      Colors.hexToRgba(color, 0.2);
 
     ctx.fillRect(
-      x1 - 1,
-      yText < 0 ? 0 : yText,
-      textWidth + ctx.lineWidth,
-      textHeight + ctx.lineWidth
+      x1,
+      y1,
+      width,
+      height
     );
 
+    // Draw bounding-box border.
+    ctx.strokeStyle = color;
+
+    ctx.lineWidth = Math.max(
+      Math.min(
+        ctx.canvas.width,
+        ctx.canvas.height
+      ) / 200,
+      2.5
+    );
+
+    ctx.strokeRect(
+      x1,
+      y1,
+      width,
+      height
+    );
+
+    // Draw a two-line label.
+    ctx.font = font;
+
+    const paddingX = 4;
+    const paddingY = 3;
+    const lineGap = 2;
+    const textHeight = fontSize;
+
+    const topLineWidth =
+      ctx.measureText(topLine).width;
+
+    const bottomLineWidth =
+      ctx.measureText(bottomLine).width;
+
+    const labelWidth =
+      Math.max(
+        topLineWidth,
+        bottomLineWidth
+      ) +
+      paddingX * 2;
+
+    const labelHeight =
+      textHeight * 2 +
+      lineGap +
+      paddingY * 2;
+
+    let labelX = x1 - 1;
+
+    // Prevent the label from extending past the right edge.
+    if (
+      labelX + labelWidth >
+      ctx.canvas.width
+    ) {
+      labelX = Math.max(
+        0,
+        ctx.canvas.width - labelWidth
+      );
+    }
+
+    let labelY =
+      y1 -
+      labelHeight -
+      ctx.lineWidth;
+
+    // Draw the label inside the box when there is not
+    // enough room above it.
+    if (labelY < 0) {
+      labelY = Math.max(0, y1);
+    }
+
+    // Draw label background.
+    ctx.fillStyle = color;
+
+    ctx.fillRect(
+      labelX,
+      labelY,
+      labelWidth,
+      labelHeight
+    );
+
+    // Draw first line.
     ctx.fillStyle = "#ffffff";
-    ctx.fillText(labelText, x1 - 1, yText < 0 ? 0 : yText);
+
+    ctx.fillText(
+      topLine,
+      labelX + paddingX,
+      labelY + paddingY
+    );
+
+    // Draw second line.
+    ctx.fillText(
+      bottomLine,
+      labelX + paddingX,
+      labelY +
+        paddingY +
+        textHeight +
+        lineGap
+    );
   }
 
+  // Draw overall count information.
   ctx.font = "28px Arial";
   ctx.fillStyle = "red";
-  ctx.fillText(`Confirmed Oysters: ${confirmedOysterCount}`, 20, 20);
+
+  ctx.fillText(
+    `Confirmed Oysters: ${confirmedOysterCount}`,
+    20,
+    20
+  );
 
   ctx.font = "22px Arial";
-  ctx.fillStyle = "red";
-  ctx.fillText(`Current Detections: ${currentDetectionCount}`, 20, 55);
+
+  ctx.fillText(
+    `Current Detections: ${currentDetectionCount}`,
+    20,
+    55
+  );
 };
 
 class Colors {
   constructor() {
     this.palette = [
-      "#FF3838",
-      "#FF9D97",
-      "#FF701F",
-      "#FFB21D",
-      "#CFD231",
-      "#48F90A",
-      "#92CC17",
-      "#3DDB86",
-      "#1A9334",
-      "#00D4BB",
-      "#2C99A8",
-      "#00C2FF",
-      "#344593",
-      "#6473FF",
-      "#0018EC",
-      "#8438FF",
-      "#520085",
-      "#CB38FF",
-      "#FF95C8",
-      "#FF37C7",
+      "#8cff9e",
+      "#dc143c",
     ];
 
     this.n = this.palette.length;
   }
 
-  get = (i) => this.palette[Math.floor(i) % this.n];
+  get = (index) =>
+    this.palette[
+      Math.floor(index) % this.n
+    ];
 
-  static hexToRgba = (hex, alpha) => {
-    const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  static hexToRgba = (
+    hex,
+    alpha
+  ) => {
+    const result =
+      /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(
+        hex
+      );
 
     return result
       ? `rgba(${[

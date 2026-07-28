@@ -1,0 +1,21 @@
+description: Ultralytics best model trained on /home/reuekennedy/Oyster-Video-Monitoring-System-2026/YOLO_testing/2026_model/Oyster-Dataset-2026-1/data.yaml
+author: Ultralytics
+date: '2026-07-16T15:57:20.000819'
+version: 8.4.0
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: Oyster-Closed
+  1: Oyster-Open
+args:
+  batch: 1
+  keras: false
+  int8: false
+  nms: false
+channels: 3
