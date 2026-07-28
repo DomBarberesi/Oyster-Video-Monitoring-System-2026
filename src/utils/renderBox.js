@@ -60,7 +60,7 @@ export const renderBoxes = (
       ) / 40
     ),
     14
-  );
+  ) / 1.4;
 
   const font = `${fontSize}px Arial`;
 
@@ -119,7 +119,7 @@ export const renderBoxes = (
         : "N/A";
 
     const topLine =
-      `ID: ${idText} | ${rawLabel} | Confidence: ${rawConfidence.toFixed(1)}%`;
+      `ID: ${idText} | ${rawLabel} | Conf: ${rawConfidence.toFixed(1)}%`;
 
     const bottomLine =
       `Smoothed State: ${smoothedLabel}`;
@@ -255,8 +255,8 @@ export const renderBoxes = (
 class Colors {
   constructor() {
     this.palette = [
-      "#8cff9e",
-      "#dc143c",
+      "#0bae24",
+      "#c21d3e",
     ];
 
     this.n = this.palette.length;
