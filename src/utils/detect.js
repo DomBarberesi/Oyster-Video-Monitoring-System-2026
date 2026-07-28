@@ -603,10 +603,10 @@ export const detectVideo = (
 
   videoSource._detecting = true;
 
- if (!vidSource._trackerInitialized) {
+if (!videoSource._trackerInitialized) {
   resetTracker();
   resetFrameCounter();
-  vidSource._trackerInitialized = true;
+  videoSource._trackerInitialized = true;
 }
 
   let animationFrameId = null;

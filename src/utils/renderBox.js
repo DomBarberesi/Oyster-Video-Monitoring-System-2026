@@ -233,22 +233,68 @@ export const renderBoxes = (
     );
   }
 
-  // Draw overall count information.
-  ctx.font = "28px Arial";
-  ctx.fillStyle = "red";
+  // Draw overall count information with white background.
+  const countBoxX = 5;
+  const countBoxY = 10;
 
-  ctx.fillText(
-    `Confirmed Oysters: ${confirmedOysterCount}`,
-    20,
-    20
+  const line1 =
+    `Confirmed Oysters: ${confirmedOysterCount}`;
+
+  const line2 =
+    `Current Detections: ${currentDetectionCount}`;
+
+  ctx.font = "20px Arial";
+  const line1Width =
+    ctx.measureText(line1).width;
+
+  ctx.font = "15px Arial";
+  const line2Width =
+    ctx.measureText(line2).width;
+
+  const boxWidth =
+    Math.max(line1Width, line2Width) + 10;
+
+  const boxHeight = 45;
+
+  // White background box.
+  ctx.fillStyle =
+    "rgba(255, 255, 255, 0.75)";
+
+  ctx.fillRect(
+    countBoxX,
+    countBoxY,
+    boxWidth,
+    boxHeight
   );
 
-  ctx.font = "22px Arial";
+  // Black border.
+  ctx.strokeStyle = "rgba(0, 0, 0, 0.3)";
+  ctx.lineWidth = 1;
+
+  ctx.strokeRect(
+    countBoxX,
+    countBoxY,
+    boxWidth,
+    boxHeight
+  );
+
+  // Draw text.
+  ctx.fillStyle = "black";
+
+  ctx.font = "20px Arial";
 
   ctx.fillText(
-    `Current Detections: ${currentDetectionCount}`,
-    20,
-    55
+    line1,
+    countBoxX + 5,
+    countBoxY + 2
+  );
+
+  ctx.font = "15px Arial";
+
+  ctx.fillText(
+    line2,
+    countBoxX + 5,
+    countBoxY + 25
   );
 };
 
