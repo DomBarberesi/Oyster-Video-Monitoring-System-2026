@@ -277,7 +277,10 @@ export const detectVideo = (vidSource, model, canvasRef, setRecordedBlob) => {
   if (vidSource._detecting) return;
   vidSource._detecting = true;
 
+ if (!vidSource._trackerInitialized) {
   resetTracker();
+  vidSource._trackerInitialized = true;
+}
 
   let rafId = null;
   let recorder = null;

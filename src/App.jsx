@@ -7,6 +7,7 @@ import { detect, detectVideo } from "./utils/detect";
 import "./style/App.css";
 import DownloadButton from "./components/DownloadButton";
 import { downloadLog } from "./frameLogger";
+import VideoControls from "./components/VideoControls";
 
 
 const App = () => {
@@ -101,6 +102,8 @@ const App = () => {
 
 
             </div>
+
+            <VideoControls videoRef={videoRef} />
 
             <ButtonHandler imageRef={imageRef} cameraRef={cameraRef} videoRef={videoRef} />
             <DownloadButton
