@@ -53,6 +53,11 @@ const App = () => {
 
             tf.dispose([warmupResults, dummyInput]); // cleanup memory
         });
+
+        if (Notification.permission !== "denied") {
+            Notification.requestPermission();
+        }
+        
     }, []);
 
     return (

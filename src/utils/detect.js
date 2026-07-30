@@ -91,6 +91,12 @@ const getIOU = (newBox, oldBox) => {
   return unionArea > 0 ? intersectionArea / unionArea : 0;
 };
 
+function showNotification(id, state) {
+  const notification = new Notification("Oyster State Changed", {
+    body: `Oyster #${id} ${state}.`
+  })
+}
+
 /**
  * Uses confidence-weighted voting over one oyster's recent raw states.
  *
@@ -105,7 +111,8 @@ const getIOU = (newBox, oldBox) => {
 const smoothState = (
   history,
   previousSmoothedClass,
-  fallbackClass
+  fallbackClass,
+  id
 ) => {
   let closedWeight = 0;
   let openWeight = 0;
@@ -160,6 +167,15 @@ const smoothState = (
 
   const smoothedWeight =
     smoothedClass === 1 ? openWeight : closedWeight;
+
+  if (Notification.permission === "granted" && smoothedClass !== previousSmoothedClass) {
+    if (smoothedClass === 0) {
+      showNotification(id, "closed");
+    }
+    else {
+      showNotification(id, "opened");
+    }
+  }
 
   return {
     smoothedClass,
@@ -299,7 +315,8 @@ const updateTracker = (
     } = smoothState(
       stateHistory,
       previousSmoothedClass,
-      rawClass
+      rawClass,
+      assignedId
     );
 
     updatedTracks.push({
