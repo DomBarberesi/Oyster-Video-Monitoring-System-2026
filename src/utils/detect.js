@@ -444,6 +444,7 @@ const preprocess = (
  */
 export const detect = async (
   source,
+  type,
   model,
   canvasRef,
   onComplete = () => {}
@@ -597,6 +598,10 @@ export const detect = async (
     nms,
   ]);
 
+  if (type === 0) {
+    resetTracker();
+  }
+
   const baked =
     canvasRef.toDataURL("image/png");
 
@@ -716,12 +721,13 @@ if (!videoSource._trackerInitialized) {
     }
 
     frameCount += 1;
-
+    
     // Run detection every tenth animation frame.
     if (frameCount % 10 === 0) {
       try {
         await detect(
           videoSource,
+          1,
           model,
           canvasRef,
           () => {}

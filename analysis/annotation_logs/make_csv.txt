@@ -1,0 +1,5 @@
+for f in *_jpg*; do touch "${f%_jpg*}.csv"; done
+for f in *.csv; do echo "class,xcenter,ycenter,width,height" >> "$f"; done
+for f in *_jpg*; do cat "$f" >> "${f%_jpg*}.csv"; done
+for f in *.txt; do rm "$f"; done
+for f in *.csv; do sed -i "" 's/ /,/g' "$f"; done

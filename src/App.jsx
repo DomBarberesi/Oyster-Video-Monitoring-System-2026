@@ -6,7 +6,7 @@ import ButtonHandler from "./components/btn-handler";
 import { detect, detectVideo } from "./utils/detect";
 import "./style/App.css";
 import DownloadButton from "./components/DownloadButton";
-import { downloadLog } from "./frameLogger";
+import { downloadLog, clearLog } from "./frameLogger";
 import VideoControls from "./components/VideoControls";
 
 
@@ -57,7 +57,7 @@ const App = () => {
         if (Notification.permission !== "denied") {
             Notification.requestPermission();
         }
-        
+
     }, []);
 
     return (
@@ -79,8 +79,10 @@ const App = () => {
                     src={annotatedSrc || "#"}
                     ref={imageRef}
                     onLoad={() => {
+                        clearLog();
                         detect(
                             imageRef.current,
+                            0,
                             model,
                             canvasRef.current,
                             (bakedDataUrl) => {
@@ -93,13 +95,20 @@ const App = () => {
                     autoPlay
                     muted
                     ref={cameraRef}
-                    onPlay={() => detectVideo(cameraRef.current, model, canvasRef.current)}
+                    onPlay={() => {
+                        clearLog();
+                        detectVideo(cameraRef.current, model, canvasRef.current);
+                     
+                    }}
                 />
                 <video
                     autoPlay
                     muted
                     ref={videoRef}
-                    onPlay={() => detectVideo(videoRef.current, model, canvasRef.current, setRecordedBlob)}
+                    onPlay={() => {
+                        clearLog();
+                        detectVideo(videoRef.current, model, canvasRef.current, setRecordedBlob);
+                    }}
                 />
 
                 <canvas width={model.inputShape[1]} height={model.inputShape[2]} ref={canvasRef} />
