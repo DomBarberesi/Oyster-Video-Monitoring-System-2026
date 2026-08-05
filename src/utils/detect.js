@@ -261,7 +261,8 @@ const updateTracker = (
       matchedTrackIndex = bestIouTrackIndex;
     } else if (
       bestDistanceTrackIndex !== -1 &&
-      bestDistance < MAX_TRACK_DISTANCE
+      bestDistance < MAX_TRACK_DISTANCE &&
+      bestIOU > 0
     ) {
       // Fall back to center-point distance.
       matchedTrackIndex = bestDistanceTrackIndex;
