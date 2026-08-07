@@ -12,7 +12,7 @@ let nextOysterId = 1;
 const MAX_TRACK_DISTANCE = 80;
 const MIN_IOU = 0.5;
 const MAX_MISSED_FRAMES = 15;
-const MIN_CONFIRMATION_FRAMES = 5;
+const MIN_CONFIRMATION_FRAMES = 3;
 
 // Confidence-weighted state smoothing settings
 const STATE_HISTORY_SIZE = 7;
