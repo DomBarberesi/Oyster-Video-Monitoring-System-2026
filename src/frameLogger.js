@@ -9,6 +9,7 @@ export function logFrame(
   boxesData,
   scoresData,
   classesData,
+  confirmedOysterCount,
   labels,
   currentTime,
   clipName = "unknown",
@@ -21,6 +22,7 @@ export function logFrame(
   frameNumber += 1;
 
   const count = scoresData.length;
+  const confirmedCount = confirmedOysterCount;
 
   if (count === 0) {
     log.push({
@@ -29,6 +31,7 @@ export function logFrame(
       timestamp:
         Number(currentTime).toFixed(3),
       count: 0,
+      confirmedCount: 0,
 
       trackedId: "",
       confirmed: "",
@@ -116,6 +119,7 @@ export function logFrame(
         Number(currentTime).toFixed(3),
 
       count,
+      confirmedCount,
 
       trackedId,
       confirmed,

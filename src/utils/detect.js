@@ -565,6 +565,7 @@ export const detect = async (
     boxesData,
     scoresData,
     classesData,
+    confirmedOysterCount,
     labels,
     source.currentTime ?? 0,
     source.currentSrc ?? "unknown",
