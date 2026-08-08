@@ -225,35 +225,7 @@ http://localhost:8080
 
 > **Deployment note:** Browser webcam access generally requires either `localhost` or an HTTPS secure context. Cloud/container deployments should therefore be served through HTTPS. If deploying to a platform such as Google Cloud Run, also ensure that Nginx is configured to listen on the port expected by the platform.
 
-## Repository Structure
 
-```text
-Oyster-Video-Monitoring-System-2026/
-├── analysis/
-│   ├── annotation_logs/
-│   └── analysis.ipynb
-├── public/
-│   ├── yolov8s_2026_web_model/
-│   ├── yolov8m_2026_web_model/
-│   └── additional exported models
-├── src/
-│   ├── components/
-│   ├── style/
-│   ├── utils/
-│   │   ├── detect.js
-│   │   ├── labelsO.json
-│   │   ├── renderBox.js
-│   │   └── webcam.js
-│   ├── App.jsx
-│   ├── frameLogger.js
-│   └── index.jsx
-├── video_player/
-├── YOLO_testing/
-├── Dockerfile
-├── package.json
-├── vite.config.js
-└── README.md
-```
 
 ### Important Files
 
